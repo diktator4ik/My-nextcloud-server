@@ -1,0 +1,19 @@
+[Unit]
+Description=Nextcloud PDF Converter Script
+After=network.target
+
+#This config launches topdf.sh script after system launch, if it fails it will try to restart each 5 seconds.
+
+[Service]
+Type=simple
+User=www-data
+ExecStart=/home/your_user/scripts/topdf.sh
+Restart=always
+RestartSec=5
+Environment=HOME=/tmp
+
+[Install]
+WantedBy=multi-user.target
+
+
+

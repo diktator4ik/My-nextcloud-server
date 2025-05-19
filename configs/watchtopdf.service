@@ -1,0 +1,17 @@
+[Unit]
+Description=Watch Nextcloud topdf folder and auto-scan
+After=network.target
+
+#similar to topdf.service config
+
+[Service]
+ExecStart=/home/your_user/scripts/watchtopdf.sh
+Restart=always
+User=root
+Environment=PATH=/usr/bin:/bin
+StandardOutput=append:/tmp/watchtopdf.log
+StandardError=append:/tmp/watchtopdf.err
+
+[Install]
+WantedBy=multi-user.target
+
