@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#libreoffice adn inotifywait is used to convert into pdf,
+#Install them before usage
+
 WATCH_DIR="/var/www/nextcloud/data/your_user/files/topdf"
 LOG_FILE="/tmp/topdf1.log"
 LIBRE_CMD="libreoffice --headless --convert-to pdf"
