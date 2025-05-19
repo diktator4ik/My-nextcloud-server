@@ -2,6 +2,16 @@
 Description=Nextcloud PDF Converter Script
 After=network.target
 
+#`topdf.service` as `watchtopdf.service` are systemd units that ensures the PDF conversion script (`topdf.sh`) runs automatically as a service.
+#This service can be configured to:
+#run on system boot
+#convert incoming files to PDF in a watched folder
+#be managed using `systemctl` (start, stop, enable, disable)
+
+#Usage:
+#sudo systemctl enable topdf.service
+#sudo systemctl start topdf.service
+
 #This config launches topdf.sh script after system launch, if it fails it will try to restart each 5 seconds.
 
 [Service]
