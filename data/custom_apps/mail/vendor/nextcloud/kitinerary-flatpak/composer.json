@@ -1,0 +1,29 @@
+{
+    "name": "nextcloud/kitinerary-flatpak",
+    "description": "KItinerary Flatpak binding",
+    "type": "library",
+    "license": "AGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Christoph Wurst"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "nextcloud/kitinerary": "^1.0",
+        "psr/log": "^1.1|^2.0|^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nextcloud\\KItinerary\\Flatpak\\": "/src"
+        }
+    },
+    "scripts": {
+        "lint": "find . -name \\*.php -not -path './vendor/*' -print0 | xargs -0 -n1 php -l"
+    }
+
+}

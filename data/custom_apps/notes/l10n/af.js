@@ -1,0 +1,27 @@
+OC.L10N.register(
+    "notes",
+    {
+    "Notes" : "Notas",
+    "Error" : "Fout",
+    "New note" : "Nuwe nota",
+    "There are unsaved notes. Leaving the page will discard all changes!" : "Daar is ongestoorde veranderinge. Indien die bladsy gesluit word sal alle veranderinge geskrap word!",
+    "Insert image" : "Voer beeld in",
+    "File extension for new notes" : "Lêeruitbreiding vir nuwe notas",
+    "All notes" : "Alle notas",
+    "Categories" : "Kategorieë",
+    "Remove from favorites" : "Verwyder uit gunstelinge",
+    "Add to favorites" : "Voeg by gunstelinge",
+    "Share" : "Deel",
+    "Rename" : "Hernoem",
+    "Delete note" : "Skrap nota",
+    "Use current version" : "Gebruik huidige weergawe",
+    "Edit" : "Wysig",
+    "Preview" : "Voorskou",
+    "Today" : "Vandag",
+    "Yesterday" : "Gister",
+    "This week" : "Vandeesweek",
+    "Loading …" : "Laai …",
+    "Uncategorized" : "Ongekategorieseer",
+    "Tasks" : "Take"
+},
+"nplurals=2; plural=(n != 1);");

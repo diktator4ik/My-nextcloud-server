@@ -1,0 +1,23 @@
+OC.L10N.register(
+    "notes",
+    {
+    "Notes" : "Тэмдэглэл",
+    "Error" : "Алдаа",
+    "New note" : "Шинэ тэмдэглэл",
+    "All notes" : "Бүх тэмдэг",
+    "Categories" : "төрөл",
+    "No notes yet" : "шинэ тэмдэглэл алга",
+    "Remove from favorites" : "Remove from favorites",
+    "Add to favorites" : "Add to favorites",
+    "Share" : "Түгээх",
+    "Rename" : "Нэр солих",
+    "Delete note" : "Тэмдэглэл устгах",
+    "Edit" : "засварлах",
+    "Preview" : "шалгах",
+    "Today" : "өнөөдөр",
+    "Yesterday" : "өчигдөр",
+    "This week" : "7 хоног",
+    "This month" : "1 сар",
+    "Loading …" : "Уншиж байна..."
+},
+"nplurals=2; plural=(n != 1);");

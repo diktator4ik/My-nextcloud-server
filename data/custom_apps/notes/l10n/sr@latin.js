@@ -1,0 +1,26 @@
+OC.L10N.register(
+    "notes",
+    {
+    "Notes" : "Notes",
+    "Error" : "Greška",
+    "New note" : "Nova beleška",
+    "Open in edit mode" : "Otvori u režimu uređivanja",
+    "Open in preview mode" : "Otvori u režimu pregleda",
+    "Display mode for notes" : "Režim prikaza beleški",
+    "All notes" : "Sve beleške",
+    "No notes yet" : "Još nema beleški",
+    "Remove from favorites" : "Remove from favorites",
+    "Add to favorites" : "Add to favorites",
+    "Share" : "Podeli",
+    "Rename" : "Rename",
+    "Edit" : "Uredi",
+    "Preview" : "Pregled",
+    "Today" : "Today",
+    "Yesterday" : "juče",
+    "This week" : "Ove sedmice",
+    "Last week" : "Prošle nedelje",
+    "This month" : "Ovog meseca",
+    "Last month" : "Prošlog meseca",
+    "Uncategorized" : "Nekategorizovano"
+},
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");

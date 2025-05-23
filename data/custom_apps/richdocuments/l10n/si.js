@@ -1,0 +1,26 @@
+OC.L10N.register(
+    "richdocuments",
+    {
+    "File already exists" : "ගොනුව දැනටමත් පවතී",
+    "No file was uploaded" : "කිසිදු ගොනුවක් උඩුගත කර නොමැත",
+    "Missing a temporary folder" : "තාවකාලික බහාලුමක් අස්ථානගත වී ඇත",
+    "File is too big" : "ගොනුව ඉතා විශාලයි",
+    "Images" : "පින්තූර",
+    "Empty" : "හිස්",
+    "New" : "නව",
+    "Save" : "සුරකින්න",
+    "Remove" : "ඉවත් කරන්න",
+    "Confirm" : "තහවුරු කරන්න",
+    "Cancel" : "අවලංගු කරන්න",
+    "Description" : "විස්තරය",
+    "No results" : "ප්‍රතිථල නැත",
+    "Close" : "වසන්න",
+    "Edit" : "සංස්කරණය",
+    "Details" : "විස්තර",
+    "Download" : "බාගන්න",
+    "New file" : "නව ගොනුව",
+    "Create" : "සාදන්න",
+    "Error" : "දෝෂය",
+    "Nickname" : "අන්වර්ථ නාමය"
+},
+"nplurals=2; plural=(n != 1);");

@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2024 Nextcloud GmbH and Nextcloud contributors
+# SPDX-License-Identifier: LGPL-3.0-or-later
+version = 1
+SPDX-PackageName = "nextcloud/kitinerary-sys"
+SPDX-PackageSupplier = "Nextcloud GmbH <https://nextcloud.com/impressum/>"
+SPDX-PackageDownloadLocation = "https://github.com/nextcloud-libraries/kitinerary-sys"
+
+[[annotations]]
+path = ["composer.json", ".idea/*"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Nextcloud GmbH and Nextcloud contributors"
+SPDX-License-Identifier = "LGPL-3.0-or-later"

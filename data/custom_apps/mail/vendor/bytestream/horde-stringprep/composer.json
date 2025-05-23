@@ -1,0 +1,24 @@
+{
+    "name": "bytestream/horde-stringprep",
+    "description": "Horde internationalized strings preparation library",
+    "type": "library",
+    "homepage": "https://www.horde.org",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Michael Slusarz",
+            "email": "slusarz@horde.org",
+            "role": "lead"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-iconv": "*",
+        "ext-intl": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Horde_Stringprep": "lib/"
+        }
+    }
+}

@@ -1,0 +1,51 @@
+services:
+  db:
+    build:
+      context: .
+      dockerfile: dockerfiledb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+  redis:
+    image: redis:alpine
+    restart: always
+  script:
+    build:
+      context: .
+      dockerfile: dockerfilescript
+    restart: always
+    volumes: 
+      - ./data:/var/www/html
+    depends_on:
+      - app
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_HOST: db
+  app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    restart: always
+    ports:
+      - ${APP_PORT}:80
+    depends_on:
+      - redis
+      - db
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_HOST: db
+    user: "33:33"
+    volumes:
+      - ./data:/var/www/html
+volumes:
+  db_data:
+  script_data:

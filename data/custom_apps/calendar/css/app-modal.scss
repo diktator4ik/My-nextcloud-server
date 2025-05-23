@@ -1,0 +1,73 @@
+/*!
+ * SPDX-FileCopyrightText: 2021 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
+
+.appointment-config-modal {
+	padding: 2vw;
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		fieldset {
+			padding: 20px 0;
+
+			header {
+				font-size: 16px;
+				margin-bottom: 3px;
+			}
+		}
+
+		.availability-select, .calendar-select {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__row {
+			&--wrapped {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px 50px;
+
+				> div {
+					flex: 1 200px;
+				}
+			}
+
+			// Rows that don't have their own vue components
+			&--local {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		&__row + &__row {
+			margin-top: 10px;
+		}
+
+		// Fix calendar picker styling
+		.multiselect__tags {
+			height: unset !important;
+			margin: 0 !important;
+		}
+	}
+
+	&__submit-button {
+		margin-top: 20px;
+	}
+}
+
+.app-config-modal-confirmation {
+	.empty-content {
+		margin-top: 0 !important;
+		margin-bottom: 20px;
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		gap: 0 10px;
+	}
+}

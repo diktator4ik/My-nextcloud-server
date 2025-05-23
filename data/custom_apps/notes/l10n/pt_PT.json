@@ -1,0 +1,27 @@
+{ "translations": {
+    "Notes" : "Notas",
+    "Error" : "Erro",
+    "New note" : "Nova nota",
+    "Open in edit mode" : "Abrir no modo de edição",
+    "Open in preview mode" : "Abrir no modo de visualização",
+    "All notes" : "Todas as notas",
+    "Categories" : "Categorias",
+    "No notes yet" : "Sem notas ainda",
+    "Remove from favorites" : "Remover de favoritos",
+    "Add to favorites" : "Adicionar aos favoritos",
+    "Share" : "Share",
+    "Rename" : "Rename",
+    "Delete note" : "Apagar nota",
+    "Use current version" : "Usar esta versão",
+    "Edit" : "Editar",
+    "Preview" : "Pré-visualização",
+    "Today" : "Hoje",
+    "Yesterday" : "Ontem",
+    "This week" : "Esta semana",
+    "Last week" : "Ultima semana",
+    "This month" : "Este mês",
+    "Last month" : "Ultimo mês",
+    "Loading …" : "A carregar...",
+    "Tasks" : "Tarefas"
+},"pluralForm" :"nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;"
+}

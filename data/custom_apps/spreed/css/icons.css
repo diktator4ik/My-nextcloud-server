@@ -1,0 +1,212 @@
+/**
+ * SPDX-FileCopyrightText: 2023 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
+.app-talk .icon-user,
+.modal-mask .icon-user,
+.v-popper__popper .icon-user,
+.talk-sidebar-callview .icon-user,
+#talk-panel .icon-user,
+#talk-sidebar .icon-user,
+#call-container .icon-user,
+.talkChatTab .icon-user {
+	background-image: url(../img/icon-user-white.svg);
+}
+
+.app-talk .icon-public,
+.modal-mask .icon-public,
+.v-popper__popper .icon-public,
+.talk-sidebar-callview .icon-public,
+#talk-panel .icon-public,
+#talk-sidebar .icon-public,
+#call-container .icon-public,
+.talkChatTab .icon-public {
+	background-image: url(../img/icon-public-white.svg);
+}
+
+.app-talk .icon-contacts,
+.modal-mask .icon-contacts,
+.v-popper__popper .icon-contacts,
+.talk-sidebar-callview .icon-contacts,
+#talk-panel .icon-contacts,
+#talk-sidebar .icon-contacts,
+#call-container .icon-contacts,
+.talkChatTab .icon-contacts {
+	background-image: url(../img/icon-contacts-white.svg);
+}
+
+.app-talk .icon-phone,
+.modal-mask .icon-phone,
+.v-popper__popper .icon-phone,
+.talk-sidebar-callview .icon-phone,
+#talk-panel .icon-phone,
+#talk-sidebar .icon-phone,
+#call-container .icon-phone,
+.talkChatTab .icon-phone {
+	background-image: url(../img/icon-phone-white.svg);
+}
+
+.app-talk .icon-password,
+.modal-mask .icon-password,
+.v-popper__popper .icon-password,
+.talk-sidebar-callview .icon-password,
+#talk-panel .icon-password,
+#talk-sidebar .icon-password,
+#call-container .icon-password,
+.talkChatTab .icon-password {
+	background-image: url(../img/icon-password-white.svg);
+}
+
+.app-talk .icon-file,
+.modal-mask .icon-file,
+.v-popper__popper .icon-file,
+.talk-sidebar-callview .icon-file,
+#talk-panel .icon-file,
+#talk-sidebar .icon-file,
+#call-container .icon-file,
+.talkChatTab .icon-file {
+	background-image: url(../img/icon-text-white.svg);
+}
+
+.app-talk .icon-mail,
+.modal-mask .icon-mail,
+.v-popper__popper .icon-mail,
+.talk-sidebar-callview .icon-mail,
+#talk-panel .icon-mail,
+#talk-sidebar .icon-mail,
+#call-container .icon-mail,
+.talkChatTab .icon-mail {
+	background-image: url(../img/icon-mail-white.svg);
+}
+
+.app-talk .icon-team,
+.modal-mask .icon-team,
+.v-popper__popper .icon-team,
+.talk-sidebar-callview .icon-team,
+#talk-panel .icon-team,
+#talk-sidebar .icon-team,
+#call-container .icon-team,
+.talkChatTab .icon-team {
+	background-image: url(../img/icon-team-white.svg);
+}
+
+.app-talk .icon-changelog,
+.modal-mask .icon-changelog,
+.v-popper__popper .icon-changelog,
+.talk-sidebar-callview .icon-changelog,
+#talk-panel .icon-changelog,
+#talk-sidebar .icon-changelog,
+#call-container .icon-changelog,
+.talkChatTab .icon-changelog {
+	background-image: url(../img/changelog.svg);
+}
+
+/* The tribute panel is a direct child of the body, so it is not affected by
+ * .app-Talk rules above.
+ * "forced-white" needs to be included in the class name as the Avatar does
+ * not accept several classes. */
+.user-bubble__avatar .icon-group-forced-white.avatar-class-icon,
+.user-bubble__avatar .icon-team-forced-white.avatar-class-icon,
+.user-bubble__avatar .icon-user-forced-white.avatar-class-icon,
+.user-bubble__avatar .icon-mail-forced-white.avatar-class-icon,
+.autocomplete-result .icon-group-forced-white.autocomplete-result__icon--,
+.autocomplete-result .icon-team-forced-white.autocomplete-result__icon--,
+.autocomplete-result .icon-user-forced-white.autocomplete-result__icon--,
+.autocomplete-result .icon-mail-forced-white.autocomplete-result__icon--,
+.mention-bubble .icon-group-forced-white.mention-bubble__icon--,
+.mention-bubble .icon-team-forced-white.mention-bubble__icon--,
+.mention-bubble .icon-user-forced-white.mention-bubble__icon--,
+.mention-bubble .icon-mail-forced-white.mention-bubble__icon-- {
+	background-color: #6B6B6B;
+}
+
+/* System default: dark theme */
+@media (prefers-color-scheme: dark) {
+	body[data-theme-default] .user-bubble__avatar .icon-group-forced-white.avatar-class-icon,
+	body[data-theme-default] .user-bubble__avatar .icon-team-forced-white.avatar-class-icon,
+	body[data-theme-default] .user-bubble__avatar .icon-user-forced-white.avatar-class-icon,
+	body[data-theme-default] .user-bubble__avatar .icon-mail-forced-white.avatar-class-icon,
+	body[data-theme-default] .autocomplete-result .icon-group-forced-white.autocomplete-result__icon--,
+	body[data-theme-default] .autocomplete-result .icon-team-forced-white.autocomplete-result__icon--,
+	body[data-theme-default] .autocomplete-result .icon-user-forced-white.autocomplete-result__icon--,
+	body[data-theme-default] .autocomplete-result .icon-mail-forced-white.autocomplete-result__icon--,
+	body[data-theme-default] .mention-bubble .icon-group-forced-white.mention-bubble__icon--,
+	body[data-theme-default] .mention-bubble .icon-team-forced-white.mention-bubble__icon--,
+	body[data-theme-default] .mention-bubble .icon-user-forced-white.mention-bubble__icon--,
+	body[data-theme-default] .mention-bubble .icon-mail-forced-white.mention-bubble__icon-- {
+		background-color: #3B3B3B;
+	}
+}
+
+/* Manually set dark theme */
+body[data-theme-dark] .user-bubble__avatar .icon-group-forced-white.avatar-class-icon,
+body[data-theme-dark] .user-bubble__avatar .icon-team-forced-white.avatar-class-icon,
+body[data-theme-dark] .user-bubble__avatar .icon-user-forced-white.avatar-class-icon,
+body[data-theme-dark] .user-bubble__avatar .icon-mail-forced-white.avatar-class-icon,
+body[data-theme-dark] .autocomplete-result .icon-group-forced-white.autocomplete-result__icon--,
+body[data-theme-dark] .autocomplete-result .icon-team-forced-white.autocomplete-result__icon--,
+body[data-theme-dark] .autocomplete-result .icon-user-forced-white.autocomplete-result__icon--,
+body[data-theme-dark] .autocomplete-result .icon-mail-forced-white.autocomplete-result__icon--,
+body[data-theme-dark] .mention-bubble .icon-group-forced-white.mention-bubble__icon--,
+body[data-theme-dark] .mention-bubble .icon-team-forced-white.mention-bubble__icon--,
+body[data-theme-dark] .mention-bubble .icon-user-forced-white.mention-bubble__icon--,
+body[data-theme-dark] .mention-bubble .icon-mail-forced-white.mention-bubble__icon-- {
+	background-color: #3B3B3B;
+}
+
+/* Invert the icon direction */
+body[dir="rtl"] .bidirectional-icon {
+	transform: scaleX(-1);
+}
+
+.user-bubble__avatar .icon-group-forced-white.avatar-class-icon,
+.user-bubble__avatar .icon-team-forced-white.avatar-class-icon,
+.user-bubble__avatar .icon-user-forced-white.avatar-class-icon,
+.user-bubble__avatar .icon-mail-forced-white.avatar-class-icon,
+.mention-bubble .icon-group-forced-white.mention-bubble__icon--,
+.mention-bubble .icon-team-forced-white.mention-bubble__icon--,
+.mention-bubble .icon-user-forced-white.mention-bubble__icon--,
+.mention-bubble .icon-mail-forced-white.mention-bubble__icon-- {
+	background-size: 75%;
+}
+
+.autocomplete-result .icon-group-forced-white.autocomplete-result__icon--,
+.autocomplete-result .icon-team-forced-white.autocomplete-result__icon--,
+.autocomplete-result .icon-user-forced-white.autocomplete-result__icon--,
+.autocomplete-result .icon-mail-forced-white.autocomplete-result__icon-- {
+	background-size: 50% !important;
+}
+
+.user-bubble__avatar .icon-user-forced-white,
+.autocomplete-result .icon-user-forced-white.autocomplete-result__icon--,
+.mention-bubble .icon-user-forced-white.mention-bubble__icon-- {
+	background-image: url(../img/icon-user-white.svg);
+}
+
+.user-bubble__avatar .icon-mail-forced-white,
+.autocomplete-result .icon-mail-forced-white.autocomplete-result__icon--,
+.mention-bubble .icon-mail-forced-white.mention-bubble__icon-- {
+	background-image: url(../img/icon-mail-white.svg);
+}
+
+.user-bubble__avatar .icon-group-forced-white,
+.autocomplete-result .icon-group-forced-white.autocomplete-result__icon--,
+.mention-bubble .icon-group-forced-white.mention-bubble__icon-- {
+	background-image: url(../img/icon-contacts-white.svg);
+}
+
+.user-bubble__avatar .icon-team-forced-white,
+.autocomplete-result .icon-team-forced-white.autocomplete-result__icon--,
+.mention-bubble .icon-team-forced-white.mention-bubble__icon-- {
+	background-image: url(../img/icon-team-white.svg);
+}
+
+/* Needed to use white color also in dark mode. */
+.app-files .app-sidebar__close.forced-white {
+	color: #ffffff;
+}
+
+.dashboard-talk-icon {
+	background-image: url(../img/app-dark.svg);
+	filter: var(--background-invert-if-dark);
+}
