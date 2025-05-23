@@ -28,7 +28,9 @@ $CONFIG = array (
   'secret' => 'jLunGhxkT0/L/Py9aeQ9l4yx81PasSXSAmhrrYvru1Lr0al1',
   'trusted_domains' => 
   array (
-    0 => '3.65.153.224:8080',
+	  0 => 'localhost',
+	  1 => '127.0.0.1',
+	  2 => 'neverloose.duckdns.org',
   ),
   'datadirectory' => '/var/www/html/data',
   'dbtype' => 'mysql',
