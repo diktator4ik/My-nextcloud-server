@@ -1,0 +1,60 @@
+# === SYSTEM & EDITOR FILES ===
+*.log
+*.tmp
+*.swp
+*.bak
+*.old
+*.orig
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+
+# === IDEs ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === PYTHON / TELEGRAM BOT ===
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+env/
+
+# === BASH SCRIPTS ===
+*.sh.swp
+*.sh.bak
+
+# === DOCKER ===
+docker-compose.override.yml
+*.env
+.env.*
+
+# === NEXTCLOUD ===
+nextcloud/data/
+nextcloud/config/
+nextcloud/apps/
+*.key
+*.crt
+*.pem
+*.sqlite
+*.db
+
+# === BACKUPS ===
+backups/
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# === SECRETS ===
+secrets/
+config.json
+auth.json
+credentials.json
+
+# === GIT ===
+.gitignore
