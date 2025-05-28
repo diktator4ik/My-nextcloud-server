@@ -22,23 +22,21 @@ This repo is my digital playground for storing notes, configs, ideas, and steps 
 - Core networking concepts (SSH, Firewall, DNS, Port Forwarding)  
 - GitHub for project management and public progress tracking  
 - Backup strategies to secure data   
-- Setting up my own DNS server   
-- VPN configuration for secure remote access   
 - Syncing Nextcloud data with my phone   
-- Telegram bot integration for notifications and control   
+  
 
 ## My achievments 
 
 - [x] Install Ubuntu on VMware  
 - [x] Configure SSH and basic Firewall  
 - [x] Set up HTTPS with Let's Encrypt  
-- [ ] Learn Bash scripting for automation  
-- [ ] Deploy Docker containers  
+- [x] Learn Bash scripting for automation  
+- [x] Deploy Docker containers  
 - [ ] Implement monitoring with Prometheus & Grafana  
-- [ ] Configure backups to secure my data  
+- [x] Configure backups to secure my data  
 - [ ] Build and run my own DNS server  
 - [ ] Set up a VPN for secure remote connections  
-- [ ] Sync Nextcloud data with my mobile devices  
+- [x] Sync Nextcloud data with my mobile devices  
 - [ ] Create a Telegram bot for server notifications and commands  
 
 
