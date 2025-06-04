@@ -10,7 +10,7 @@ services:
       MYSQL_USER: ${DB_USER}
       MYSQL_PASSWORD: ${DB_PASSWORD}
     volumes:
-      - db_data:/var/lib/mysql
+     - ./datadb:/var/lib
   redis:
     image: redis:alpine
     restart: always
@@ -20,7 +20,7 @@ services:
       dockerfile: dockerfilescript
     restart: always
     volumes: 
-      - ./data:/var/www/html
+      - ./data:/var/www/
     depends_on:
       - app
     environment:
@@ -46,6 +46,3 @@ services:
     user: "33:33"
     volumes:
       - ./data:/var/www/html
-volumes:
-  db_data:
-  script_data:
