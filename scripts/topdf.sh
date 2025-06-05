@@ -3,10 +3,10 @@
 #libreoffice adn inotifywait is used to convert into pdf,
 #Install them before usage
 
-<<<<<<< HEAD
+
 WATCH_DIR="/var/www/html/nextcloud/data/diktator4ik/files/topdf"
 LOG_FILE="/tmp/topdf.log"
-=======
+
 WATCH_DIR="/var/www/nextcloud/data/your_user/files/topdf"
 LOG_FILE="/tmp/topdf1.log"
 >>>>>>> 904ab1412c0bb8a4e286fca7d538fdd885f206c9
