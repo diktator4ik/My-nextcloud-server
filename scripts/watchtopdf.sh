@@ -3,13 +3,11 @@
 #This script will help you to make sure that any file you add manually to user's folder will be visible in web interface of your nextcloud web site.
 #If you are using for example my script for converting files to pdf, this script is mandatory for you.
 
-<<<<<<< HEAD
 WATCH_DIR="/var/www/html/nextcloud/data/diktator4ik/files/topdf"
 NC_USER="diktator4ik"
-=======
+
 WATCH_DIR="/var/www/nextcloud/data/your_user/files/topdf"
 NC_USER="your_user"
->>>>>>> 904ab1412c0bb8a4e286fca7d538fdd885f206c9
 
 inotifywait -m -e close_write,create,delete,move "$WATCH_DIR" --format '%w%f' | while read FILE
 do
