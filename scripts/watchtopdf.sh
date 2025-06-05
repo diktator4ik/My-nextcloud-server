@@ -17,11 +17,11 @@ do
     chown -R www-data:www-data "$WATCH_DIR"
     
     # This command scans for changes in user's folder and notifies nextcloud
-<<<<<<< HEAD
+
     sudo -u www-data php /var/www/html/nextcloud/occ files:scan --path="$NC_USER/files/topdf" >> /tmp/watchtopdf.log 2>&1
-=======
+
     sudo -u www-data php /var/www/nextcloud/occ files:scan --path="$NC_USER/files/topdf" >> /tmp/watchtopdf.log 2>&1
->>>>>>> 904ab1412c0bb8a4e286fca7d538fdd885f206c9
+
 
     echo "$(date): Scan complete" >> /tmp/watchtopdf.log
 done
