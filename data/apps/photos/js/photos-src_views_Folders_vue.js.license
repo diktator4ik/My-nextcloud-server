@@ -34,6 +34,7 @@ SPDX-FileCopyrightText: Paul Vorbach <paul@vorb.de> (http://vorb.de)
 SPDX-FileCopyrightText: Olivier Scherrer <pode.fr@gmail.com>
 SPDX-FileCopyrightText: Nextcloud GmbH and Nextcloud contributors
 SPDX-FileCopyrightText: Nathan Rajlich <nathan@tootallnate.net> (http://n8.io/)
+SPDX-FileCopyrightText: Max <max@nextcloud.com>
 SPDX-FileCopyrightText: Matt Zabriskie
 SPDX-FileCopyrightText: Mathias Bynens
 SPDX-FileCopyrightText: Mark <mark@remarkablemark.org>
@@ -96,7 +97,7 @@ This file is generated from multiple sources. Included packages:
 	- version: 0.2.0
 	- license: BSD-2-Clause
 - @nextcloud/auth
-	- version: 2.4.0
+	- version: 2.5.1
 	- license: GPL-3.0-or-later
 - axios
 	- version: 1.8.3
@@ -111,7 +112,7 @@ This file is generated from multiple sources. Included packages:
 	- version: 1.2.0
 	- license: GPL-3.0-or-later
 - @nextcloud/dialogs
-	- version: 6.2.0
+	- version: 6.3.0
 	- license: AGPL-3.0-or-later
 - semver
 	- version: 7.7.1
@@ -135,7 +136,7 @@ This file is generated from multiple sources. Included packages:
 	- version: 0.2.4
 	- license: GPL-3.0-or-later
 - @nextcloud/upload
-	- version: 1.9.1
+	- version: 1.10.0
 	- license: AGPL-3.0-or-later
 - @nextcloud/vue-select
 	- version: 3.25.1
@@ -183,7 +184,7 @@ This file is generated from multiple sources. Included packages:
 	- version: 6.0.1
 	- license: MIT
 - @nextcloud/vue
-	- version: 8.26.0
+	- version: 8.27.0
 	- license: AGPL-3.0-or-later
 - @ungap/structured-clone
 	- version: 1.2.0
@@ -374,6 +375,9 @@ This file is generated from multiple sources. Included packages:
 - md5
 	- version: 2.3.0
 	- license: BSD-3-Clause
+- mdast-squeeze-paragraphs
+	- version: 6.0.0
+	- license: MIT
 - escape-string-regexp
 	- version: 5.0.0
 	- license: MIT
@@ -450,7 +454,7 @@ This file is generated from multiple sources. Included packages:
 	- version: 4.0.2
 	- license: MIT
 - nanoid
-	- version: 3.3.8
+	- version: 3.3.11
 	- license: MIT
 - nested-property
 	- version: 4.0.0
@@ -487,6 +491,9 @@ This file is generated from multiple sources. Included packages:
 	- license: MIT
 - remark-parse
 	- version: 11.0.0
+	- license: MIT
+- remark-unlink-protocols
+	- version: 1.0.0
 	- license: MIT
 - requires-port
 	- version: 1.0.0
@@ -585,7 +592,7 @@ This file is generated from multiple sources. Included packages:
 	- version: 15.11.1
 	- license: MIT
 - vue-material-design-icons
-	- version: 5.2.0
+	- version: 5.3.1
 	- license: MIT
 - vue-router
 	- version: 3.6.5

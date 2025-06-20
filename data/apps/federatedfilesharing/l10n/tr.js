@@ -2,7 +2,7 @@ OC.L10N.register(
     "federatedfilesharing",
     {
     "Invalid Federated Cloud ID" : "Birleşik bulut kimliği geçersiz",
-    "Server to server sharing is not enabled on this server" : "Bu sunucuda, sunucudan sunucuya paylaşım özelliği kullanıma alınmamış",
+    "Server to server sharing is not enabled on this server" : "Bu sunucuda, sunucudan sunucuya paylaşım özelliği etkin değil",
     "Couldn't establish a federated share." : "Birleşik bir paylaşım oluşturulamadı.",
     "Couldn't establish a federated share, maybe the password was wrong." : "Birleşik bir paylaşım oluşturulamadı. Parola yanlış olabilir.",
     "Federated Share request sent, you will receive an invitation. Check your notifications." : "Birleşik paylaşım isteği gönderildi. Bir davet alacaksınız. Bildirimlerinizi denetleyin.",
@@ -66,10 +66,6 @@ OC.L10N.register(
     "Remote share" : "Uzak paylaşım",
     "Do you want to add the remote share {name} from {owner}@{remote}?" : "{owner}@{remote} konumundan {name} uzak paylaşımını eklemek istiyor musunuz?",
     "Remote share password" : "Uzak paylaşım parolası",
-    "Incoming share could not be processed" : "Gelen paylaşım işlenemedi",
-    "Clipboard is not available" : "Pano kullanılamıyor",
-    "Your Federated Cloud ID:" : "Birleşik bulut kimliğiniz:",
-    "Twitter" : "Twitter",
-    "Diaspora" : "Diaspora"
+    "Incoming share could not be processed" : "Gelen paylaşım işlenemedi"
 },
 "nplurals=2; plural=(n > 1);");

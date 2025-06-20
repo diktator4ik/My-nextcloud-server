@@ -1,0 +1,30 @@
+# ----- Base ----------------------------------------------------
+FROM nextcloud:latest
+ENV DEBIAN_FRONTEND=noninteractive
+
+
+# all for scripts
+RUN apt update && apt install -y \
+	#   php-cli php-mysql php-curl php-xml php-zip php-gd php-mbstring php-bcmath php-intl php-fileinfo php-opcache \
+    libreoffice libreoffice-core libreoffice-writer libreoffice-calc libreoffice-impress \
+    cron supervisor curl git inotify-tools vim bash
+RUN apt clean && rm -rf /var/lib/apt/lists/*
+# ----- Copy scripts & config --------------------------------
+COPY scripts/topdf.sh /usr/local/bin
+COPY scripts/watchtopdf.sh /usr/local/bin
+RUN chmod +x /usr/local/bin/topdf.sh /usr/local/bin/watchtopdf.sh
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+# Supervisord конфіг (див. ↓)
+COPY ./supervisord.conf /etc/supervisord.conf
+
+
+
+# ----- Entrypoint ---------------------------------------------
+#CMD ["/usr/lockal/bin/topdf.sh", "/usr/lockal/bin/watchtopdf.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+CMD ["apache2-foreground"]
+EXPOSE 80
+
+

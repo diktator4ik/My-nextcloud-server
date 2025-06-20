@@ -1,20 +1,30 @@
-FROM ubuntu:22.04
+# ----- Base ----------------------------------------------------
+FROM nextcloud:latest
 ENV DEBIAN_FRONTEND=noninteractive
+
 
 # all for scripts
 RUN apt update && apt install -y \
-    php-cli php-mysql php-curl php-xml php-zip php-gd php-mbstring php-bcmath php-intl php-fileinfo php-opcache \
+	#   php-cli php-mysql php-curl php-xml php-zip php-gd php-mbstring php-bcmath php-intl php-fileinfo php-opcache \
     libreoffice libreoffice-core libreoffice-writer libreoffice-calc libreoffice-impress \
     cron supervisor curl git inotify-tools vim bash
 RUN apt clean && rm -rf /var/lib/apt/lists/*
-RUN groupadd -f www-data && usermod -aG www-data root
-#CMD ["tail", "-f", "/dev/null"]
+# ----- Copy scripts & config --------------------------------
+COPY scripts/topdf.sh /usr/local/bin
+COPY scripts/watchtopdf.sh /usr/local/bin
+RUN chmod +x /usr/local/bin/topdf.sh /usr/local/bin/watchtopdf.sh
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
-#RUN mkdir -p /var/log/supervisor
+# Supervisord конфіг (див. ↓)
+COPY ./supervisord.conf /etc/supervisord.conf
 
-# startup script
-#COPY startup.sh /usr/local/bin/startup.sh
-#RUN chmod +x /usr/local/bin/startup.sh
-CMD ["/usr/bin/supervisord", "-c", "/var/www/html/scripts/supervisord.conf"]
+
+
+# ----- Entrypoint ---------------------------------------------
+#CMD ["/usr/lockal/bin/topdf.sh", "/usr/lockal/bin/watchtopdf.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+CMD ["apache2-foreground"]
+
 
 

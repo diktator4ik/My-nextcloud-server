@@ -307,7 +307,7 @@ OC.L10N.register(
     "Reminders are always sent to organizers and attendees." : "Påmindelser sendes altid til arrangører og deltagere.",
     "Enable notifications for events via push" : "Aktiver notifikationer for begivenheder via push",
     "Cancel" : "Annuller",
-    "Import" : "Importer",
+    "Import" : "Importér",
     "Error while saving settings" : "Der opstod en fejl under lagring af indstillinger",
     "Contact reset successfully" : "Kontakten blev nulstillet",
     "Error while resetting contact" : "Fejl under nulstilling af kontakt",
@@ -323,10 +323,6 @@ OC.L10N.register(
     "Please contact the organizer directly." : "Kontakt venligst arrangøren direkte.",
     "Are you accepting the invitation?" : "Accepter du invitationen?",
     "Tentative" : "Foreløbig",
-    "Your attendance was updated successfully." : "Dit tilstedeværelse blev opdateret.",
-    "Time:" : "Tid:",
-    "Could not open file" : "Kunne ikke åbne fil",
-    "Invalid chunk name" : "Ugyldigt stykke navn",
-    "Could not rename part file assembled from chunks" : "Kunne ikke omdøbe delfilen samlet fra stykker"
+    "Your attendance was updated successfully." : "Dit tilstedeværelse blev opdateret."
 },
 "nplurals=2; plural=(n != 1);");

@@ -57,7 +57,7 @@
     "Emails:" : "E-postalar:",
     "Federated sent:" : "Birleşik gönderilen:",
     "Federated received:" : "Birleşik alınan:",
-    "Talk conversations:" : "Konuş görüşmeleri:",
+    "Talk conversations:" : "Talk görüşmeleri:",
     "PHP" : "PHP",
     "Version:" : "Sürüm:",
     "Memory limit:" : "Bellek sınırı:",
@@ -80,7 +80,7 @@
     "Max listen queue:" : "En fazla kuyruk dinleme:",
     "Max active processes:" : "En fazla etkin işlem sayısı:",
     "Max children reached:" : "Ulaşılan en fazla alt işlem:",
-    "Database" : "Veri tabanı",
+    "Database" : "Veritabanı",
     "Type:" : "Tür:",
     "External monitoring tool" : "Dış izleme aracı",
     "Use this end point to connect an external monitoring tool:" : "Bir dış izleme aracına bağlanmak için bu uç noktayı kullanın:",
@@ -89,12 +89,6 @@
     "Skip apps section (including apps section will send an external request to the app store)" : "Uygulamalar bölümü atlansın (uygulamalar bölümünün katılması, uygulama mağazasına bir dış istek gönderir)",
     "Skip server update" : "Sunucu güncellemesini atla",
     "To use an access token, please generate one then set it using the following command:" : "Erişim kodunu kullanmak için yeni bir kod oluşturup şu komutu yürüterek ayarlayın:",
-    "Then pass the token with the \"NC-Token\" header when querying the above URL." : "Ardından yukarıdaki adresi sorgularken kodu \"NC-Token\" üst bilgisi ile gönderin.",
-    "Load average: {cpu} (last minute)" : "Ortalama yük: {cpu} (son bir dakika)",
-    "DNS:" : "DNS:",
-    "Total users:" : "Kullanıcı sayısı:",
-    "24 hours:" : "24 saat:",
-    "1 hour:" : "1 saat:",
-    "5 mins:" : "5 dakika:"
+    "Then pass the token with the \"NC-Token\" header when querying the above URL." : "Ardından yukarıdaki adresi sorgularken kodu \"NC-Token\" üst bilgisi ile gönderin."
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }

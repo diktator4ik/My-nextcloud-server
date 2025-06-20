@@ -38,6 +38,7 @@
     "Redo" : "Refari",
     "Cannot copy, please copy the link manually" : "Ne eblis kopii la ligilon; kopiu ĝin permane.",
     "Save changes" : "Konservi ŝanĝojn",
+    "Cancel" : "Cancel",
     "URL" : "Retadreso",
     "Formatting help" : "Helpo pri tekstaranĝo",
     "to" : "al",
@@ -57,8 +58,6 @@
     "Use current version" : "Uzi nunan version",
     "Use the saved version" : "Uzi la konservitan version",
     "Info" : "Info",
-    "Warning" : "Averto",
-    "Control" : "Kontrolo",
-    "Add notes, lists or links …" : "Aldoni notojn, listojn aŭ ligilojn..."
+    "Warning" : "Averto"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

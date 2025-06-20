@@ -5,7 +5,7 @@ OC.L10N.register(
     "See %s" : "Skatīt %s",
     "Application %1$s is not present or has a non-compatible version with this server. Please check the apps directory." : "Lietotne %1$s nav pieejama vai tai ir ar šo serveri nesaderīga versija. Lūgums pārbaudīt lietotņu mapi.",
     "Sample configuration detected" : "Atrasta konfigurācijas paraugs",
-    "It has been detected that the sample configuration has been copied. This can break your installation and is unsupported. Please read the documentation before performing changes on config.php" : "Konstatēts, ka paraug konfigurācija ir nokopēta. Tas var izjaukt jūsu instalāciju un nav atbalstīts. Lūdzu, izlasiet dokumentāciju, pirms veicat izmaiņas config.php",
+    "It has been detected that the sample configuration has been copied. This can break your installation and is unsupported. Please read the documentation before performing changes on config.php" : "Tika noteikts, ka tika kopēta paraugkonfigurācija. Tas var salauzt uzstādīto un netiek atbalstīts. Lūgums pirms izmaiņu veikšanas config.php izlasīt dokumentāciju",
     "%s email verification" : "%s e-pasta pārbaude",
     "Email verification" : "E-pasta pārbaude",
     "Click the following button to confirm your email." : "Jāklikšķina zemā esošā poga, lai apstiprinātu savu e-pasta adresi.",
@@ -68,7 +68,7 @@ OC.L10N.register(
     "Set an admin password." : "Iestatīt pārvaldītāja paroli.",
     "Open %s" : "Atvērt %s",
     "Unknown share type" : "Nezināms kopīgošanas veids",
-    "You are not allowed to share %s" : "Tev nav ļauts dalīties ar %s",
+    "You are not allowed to share %s" : "Tev nav ļauts kopīgot %s",
     "Could not find category \"%s\"" : "Nevarēja atrast kategoriju “%s”",
     "Sunday" : "Svētdiena",
     "Monday" : "Pirmdiena",
@@ -134,10 +134,6 @@ OC.L10N.register(
     "Text" : "Teksts",
     "Summary" : "Kopsavilkums",
     "Translate" : "Tulkot",
-    "File name is a reserved word" : "Datnes nosaukums ir aizņemts vārds",
-    "File name is too long" : "Datnes nosaukums ir pārāk garš",
-    "Users" : "Lietotāji",
-    "Open »%s«" : "Atvērt »%s«",
     "File is currently busy, please try again later" : "Datne pašlaik ir aizņemta. Lūgums vēlāk mēģināt vēlreiz"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);");

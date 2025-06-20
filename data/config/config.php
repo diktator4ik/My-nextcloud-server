@@ -1,12 +1,7 @@
 <?php
 $CONFIG = array (
   'htaccess.RewriteBase' => '/',
-  'memcache.local' => '\\OC\\Memcache\\Redis',
-  'redis' => array(
-    'host' => 'redis',
-    'port' => 6379,
-    // 'password' => '', // якщо Redis без пароля
-  ),
+  'memcache.local' => '\\OC\\Memcache\\APCu',
   'apps_paths' => 
   array (
     0 => 
@@ -23,25 +18,24 @@ $CONFIG = array (
     ),
   ),
   'upgrade.disable-web' => true,
-  'instanceid' => 'ocowp48p8wjm',
-  'passwordsalt' => 'y7IBPZcX2PaHbX9xAO6NRfSa8qlgSt',
-  'secret' => 'jLunGhxkT0/L/Py9aeQ9l4yx81PasSXSAmhrrYvru1Lr0al1',
+  'instanceid' => 'ocq9v5yl92xg',
+  'passwordsalt' => 'oFySdYqkGk7BkwFjGFLQPceEDf9Fyf',
+  'secret' => 'rfmwoSBeu4jmNFQoKhezbdhKYkjqjKCBVku81Sg95BfwgdGy',
   'trusted_domains' => 
   array (
-	  0 => 'localhost',
-	  1 => '127.0.0.1',
-	  2 => 'neverloose.duckdns.org',
+    0 => '192.168.1.30:8080',
   ),
   'datadirectory' => '/var/www/html/data',
-  'dbtype' => 'mysql',
-  'version' => '31.0.5.1',
-  'overwrite.cli.url' => 'http://3.65.153.224:8080',
+  'dbtype' => 'pgsql',
+  'version' => '31.0.6.2',
+  'overwrite.cli.url' => 'http://192.168.1.30:8080',
   'dbname' => 'nextcloud',
-  'dbhost' => 'db',
+  'dbhost' => '192.168.1.30:5432',
   'dbport' => '',
   'dbtableprefix' => 'oc_',
-  'mysql.utf8mb4' => true,
-  'dbuser' => 'ncuser',
-  'dbpassword' => 'superpassword',
+  'dbuser' => 'oc_diktator4ik',
+  'dbpassword' => 'UWrV9BZr6SHjNEEa3nCfflRkTmW24C',
   'installed' => true,
+  'loglevel' => 2,
+  'maintenance' => false,
 );

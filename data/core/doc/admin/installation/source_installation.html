@@ -318,6 +318,12 @@ your .htaccess file:</p>
 </pre></div>
 </div>
 <p>After each update, these changes are automatically applied to the <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code>-file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In case the automatically added <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code> configuration <cite>SetEnv front_controller_active true</cite> does not work for your environment:
+Edit <code class="docutils literal notranslate"><span class="pre">config/config.php</span></code> and add <code class="docutils literal notranslate"><span class="pre">'htaccess.IgnoreFrontController'</span> <span class="pre">=&gt;</span> <span class="pre">true</span></code>.
+See <a class="reference internal" href="../configuration_server/config_sample_php_parameters.html"><span class="doc">Configuration Parameters</span></a> for a detailed description.</p>
+</div>
 </section>
 <section id="enabling-ssl">
 <span id="enabling-ssl-label"></span><h2>Enabling SSL<a class="headerlink" href="#enabling-ssl" title="Link to this heading"></a></h2>

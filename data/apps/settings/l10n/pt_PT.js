@@ -179,6 +179,7 @@ OC.L10N.register(
     "Login" : "Iniciar Sessão",
     "Password" : "Palavra-passe",
     "Profile" : "Perfil",
+    "Password confirmation is required" : "Confirmação de senha necessária",
     "Server-side encryption" : "Atualizar App",
     "Server-side encryption makes it possible to encrypt files which are uploaded to this server. This comes with limitations like a performance penalty, so enable this only if needed." : "A cifra do lado do servidor possibilita cifrar os ficheiros que serão enviados para este servidor. Isto implica um impacto no desempenho e só deverá ser ativo quando necessário.",
     "Enable server-side encryption" : "Ativar encriptação do lado do servidor",
@@ -287,9 +288,6 @@ OC.L10N.register(
     "Check out our blog" : "Veja o nosso blog",
     "Subscribe to our newsletter" : "Subscreva as nossas notícias",
     "This community release of Nextcloud is unsupported and instant notifications are unavailable." : "Este lançamento comunitário do Nextcloud não é compatível e as notificações instantâneas não estão disponíveis.",
-    "Your biography" : "Biografia",
-    "Username" : "Nome de utilizador",
-    "User backend" : "Backend do utilizador",
-    "Follow us on Twitter" : "Siga-nos no Twitter"
+    "Your biography" : "Biografia"
 },
 "nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

@@ -3,7 +3,7 @@
         'name' => 'nextcloud/photos',
         'pretty_version' => 'dev-stable31',
         'version' => 'dev-stable31',
-        'reference' => 'c166eb5ce7263055d3c62e047679cba2b334a1fb',
+        'reference' => '2e25e7cb0cbebc03ddf0487e7cd810defe896899',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'nextcloud/photos' => array(
             'pretty_version' => 'dev-stable31',
             'version' => 'dev-stable31',
-            'reference' => 'c166eb5ce7263055d3c62e047679cba2b334a1fb',
+            'reference' => '2e25e7cb0cbebc03ddf0487e7cd810defe896899',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
