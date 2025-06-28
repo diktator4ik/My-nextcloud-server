@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name 192.168.1.160;
+
+    location / {
+        proxy_pass http://192.168.49.2;
+        proxy_set_header Host dashboard.kube;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+
