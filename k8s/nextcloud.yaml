@@ -71,18 +71,6 @@ spec:
           limits:
             memory: "1Gi"
             cpu: "1000m"
-        readinessProbe:
-          httpGet:
-            path: /
-            port: 80
-          initialDelaySeconds: 30
-          periodSeconds: 10
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 80
-          initialDelaySeconds: 60
-          periodSeconds: 30
       volumes:
       - name: nextcloud-storage
         persistentVolumeClaim:

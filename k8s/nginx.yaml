@@ -14,16 +14,16 @@ spec:
     spec:
       hostNetwork: true
       containers:
-      - name: nginx
-        image: nginx:stable
-        ports:
-        - containerPort: 80
-        volumeMounts:
-        - name: nginx-config-volume
-          mountPath: /etc/nginx/nginx.conf
-          subPath: nginx.conf
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: nginx-config-volume
+              mountPath: /etc/nginx/nginx.conf
+              subPath: nginx.conf
       volumes:
-      - name: nginx-config-volume
-        configMap:
-          name: nginx-config
+        - name: nginx-config-volume
+          configMap:
+            name: nginx-config
 
