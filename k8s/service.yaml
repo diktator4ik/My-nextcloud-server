@@ -32,7 +32,7 @@ spec:
   selector:
     app: nextcloud
   ports:
-  - port: 80
+  - port: 8080
     targetPort: 80
     protocol: TCP
   type: NodePort
@@ -58,8 +58,9 @@ spec:
     app: grafana
   ports:
   - port: 3000
-    targetPort: 3000
-  type: NodePort
+    targetPort: http-grafana
+    protocol: TCP
+  type: LoadBalancer
 ---
 apiVersion: v1
 kind: Service

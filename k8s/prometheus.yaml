@@ -12,6 +12,7 @@ spec:
       labels:
         app: prometheus
     spec:
+      serviceAccountName: prometheus-sa
       containers:
       - name: prometheus
         image: prom/prometheus:latest
@@ -22,7 +23,8 @@ spec:
           mountPath: /etc/prometheus
         - name: prometheus-storage
           mountPath: /prometheus
-        command:
+        args:
+        - '--web.external-url=/prometheus'
         - '--config.file=/etc/prometheus/prometheus.yml'
         - '--storage.tsdb.path=/prometheus'
         - '--web.console.libraries=/etc/prometheus/console_libraries'
