@@ -16,18 +16,20 @@ spec:
     spec:
       containers:
       - name: ollama
-        image: ollama/ollama:latest
+        image: ollama/ollama:latest # Consider changing this tag if needed
         ports:
         - containerPort: 11434
+        # Add the environment variables here
+        env:
+        - name: OLLAMA_GPU_LAYER
+          value: "cuda"
+        - name: CUDA_VISIBLE_DEVICES
+          value: "0"
         resources:
-          requests:
-            cpu: "4000m"
-            memory: "8Gi"
-            nvidia.com/gpu: "0"
           limits:
+            nvidia.com/gpu: "1"
             cpu: "7000m"
             memory: "10Gi"
-            nvidia.com/gpu: "0"
         volumeMounts:
         - name: ollama-volume
           mountPath: /root/.ollama
