@@ -1,0 +1,78 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: vllm
+  namespace: open-webui
+spec:
+  serviceName: "vllm"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vllm
+  template:
+    metadata:
+      labels:
+        app: vllm
+    spec:
+      containers:
+      - name: vllm
+        image: vllm/vllm-openai:latest
+        command: ["python3", "-m", "vllm.entrypoints.openai.api_server"]
+        args:
+        - "--model=medicalai/ClinicalGPT-base-zh"
+        - "--host=0.0.0.0"
+        - "--port=11434"
+        - "--trust-remote-code"
+        - "--max-model-len=256"        
+        - "--max-num-batched-tokens=512"
+        - "--block-size=16"
+        env:
+        # Opt
+        - name: HUGGING_FACE_HUB_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: hf-token-secret
+              key: token
+        ports:
+        - containerPort: 11434
+        resources:
+          requests:
+            cpu: "2000m"
+            memory: "4Gi"
+            nvidia.com/gpu: "1"
+          limits:
+            cpu: "4000m"
+            memory: "8Gi"
+            nvidia.com/gpu: "1"
+        volumeMounts:
+        - name: vllm-volume
+          mountPath: /root/.cache/huggingface
+        - name: shm
+          mountPath: /dev/shm
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 11434
+          initialDelaySeconds: 180
+          periodSeconds: 30
+          failureThreshold: 5
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 11434
+          initialDelaySeconds: 180
+          periodSeconds: 15
+          failureThreshold: 3
+      volumes:
+      - name: shm
+        emptyDir:
+          medium: Memory
+          sizeLimit: "3Gi"
+  volumeClaimTemplates:
+  - metadata:
+      name: vllm-volume
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 50Gi

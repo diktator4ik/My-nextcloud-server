@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: anythingllm-deployment
+  namespace: open-webui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anythingllm
+  template:
+    metadata:
+      labels:
+        app: anythingllm
+    spec:
+      containers:
+      - name: anythingllm
+        image: mintplexlabs/anythingllm:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: STORAGE_DIR
+          value: "/app/server/storage"
+        - name: OLLAMA_BASE_URL
+          value: "http://ollama-service.open-webui.svc.cluster.local:11434"
+        volumeMounts:
+        - name: anythingllm-storage
+          mountPath: /app/server/storage
+        tty: true
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
+          limits:
+            cpu: "1000m"
+            memory: "1Gi"
+      volumes:
+      - name: anythingllm-storage
+        persistentVolumeClaim:
+          claimName: anythingllm-pvc
+

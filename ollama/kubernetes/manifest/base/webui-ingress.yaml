@@ -4,7 +4,7 @@ metadata:
   name: open-webui-ingress
   namespace: open-webui
   annotations:
-    kubernetes.io/ingress.class: "traefik"
+    spec.ingressClassName: "traefik"
 
   #annotations:
     # Use appropriate annotations for your Ingress controller, e.g., for NGINX:
