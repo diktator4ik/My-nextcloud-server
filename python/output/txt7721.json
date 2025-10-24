@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 67-year-old smoker comes to the office with a 2-week history of decreased vision in his right eye that he describes as \"blurry\" and \"distorted.\" The patient has been having vision problems over the past year, and these have made it more difficult to drive and require that he use a bright light to read the newspaper. He has no history of diabetes mellitus or hypertension. The patient uses an albuterol inhaler for occasional wheezing and shortness of breath. Ophthalmologic examination of the right eye shows a grayish discoloration of the macula with areas of adjacent hemorrhage. Which of the following should be specifically targeted in treatment of this patient's condition?",
+  "variants": [
+    "CD20 lymphocyte glycoprotein",
+    "Epidermal growth factor receptor",
+    "Interleukin-2",
+    "Tumor necrosis factor-alpha",
+    "Vascular endothelial growth factor"
+  ],
+  "answer": "E",
+  "explanation": "The patient's presentation is consistent with wet age-related macular degeneration (AMO). The grayish discoloration of the macula with adjacent hemorrhage suggests subretinal neovascularization, a hallmark of wet AMO.  Wet AMO is characterized by increased vascular endothelial growth factor (VEGF) production, leading to leakage from new blood vessels. Therefore, treatment should specifically target VEGF.  VEGF inhibitors (e.g., ranibizumab, bevacizumab) are the standard of care for wet AMO.  The other options are used for different conditions and are not appropriate for treating wet AMO."
+}

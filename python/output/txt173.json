@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 63-year-old man comes to the office due to blurred vision in both eyes for the last 2 days. The blurriness is worse when he reads but is not noticeable when he drives. The patient has no associated headache, double vision, or weakness. However, he did start taking diphenhydramine several days ago for seasonal allergies. Past medical history is unremarkable. Vital signs are normal. On physical examination, there is edema and clear drainage affecting the nasal mucosa. Funduscopic examination is normal. This patient's visual symptoms are most likely due to blockade of which of the following mediators?",
+  "variants": [
+    "A. Acetylcholine",
+    "B. Histamine",
+    "C. Leukotrienes",
+    "D. Norepinephrine",
+    "E. Serotonin"
+  ],
+  "answer": "B",
+  "explanation": "The patient's symptoms (blurred vision worse with near work) are consistent with anticholinergic effects from diphenhydramine. Diphenhydramine is a first-generation antihistamine that blocks muscarinic acetylcholine receptors. This blockade impairs accommodation by reducing ciliary muscle contraction, leading to blurred near vision.  The other options are incorrect because diphenhydramine primarily targets histamine receptors, but also has significant anticholinergic effects. Leukotrienes are involved in allergic asthma, norepinephrine causes vasoconstriction, and serotonin is involved in mood and appetite."
+}

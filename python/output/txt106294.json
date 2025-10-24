@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 32-year-old woman comes to the office to establish medical care. The patient reports no symptoms. Medical history is significant for migraine headaches for which she takes acetaminophen and naproxen as needed. Vital signs are within normal limits. Physical examination is unremarkable except for anisocoria. Pupillary examination findings in normal, bright, and dim light are shown in the image below: Right Left Room light Bright light Dim light This patient's pupillary abnormality is likely due to a defect in which of the following pathways?",
+  "variants": [
+    "A. Optic nerve of the left eye",
+    "B. Sympathetic defect (right eye)",
+    "C. Parasympathetic defect (left eye)",
+    "D. Trigeminal nerve (CN V)",
+    "E. Visual pathway"
+  ],
+  "answer": "C",
+  "explanation": "The patient presents with anisocoria that increases in bright light. This is consistent with a parasympathetic defect in the right eye, meaning the right pupil is unable to constrict properly in response to light. In dim light, both pupils dilate because sympathetic input is intact bilaterally. A parasympathetic defect would cause the right pupil to be smaller in bright light and larger in dim light. The sympathetic defect would cause the right pupil to be larger in dim light and smaller in bright light. The optic nerve and visual pathway are involved in vision but not pupillary control. The trigeminal nerve is involved in corneal sensation and ocular motor control (ciliary muscle), but not pupillary constriction."
+}

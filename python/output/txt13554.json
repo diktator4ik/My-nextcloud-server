@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 62-year-old woman comes to the emergency department due to acute eye pain. She has a history of seasonal allergies and developed itchy, watery, red eyes after working outdoors in her garden. The patient used over-the­ counter eye drops to treat her allergy symptoms, and several hours later, she began experiencing severe right eye pain and headache. On examination, the right eye appears red with a hazy cornea and dilated pupil that responds poorly to light. Palpation of the globes reveals notable firmness on the right compared to the left. Visual acuity in the affected eye is severely diminished. Tonometry reveals elevated intraocular pressure. Which of the following medications was most likely used by this patient?",
+  "variants": [
+    "A. Alpha-adrenergic agonist",
+    "B. Beta blocker",
+    "C. Mast cell stabilizer",
+    "D. Nonsteroidal anti-inflammatory drug",
+    "E. Prostaglandin analogue"
+  ],
+  "answer": "A",
+  "explanation": "The patient's presentation is consistent with acute angle-closure glaucoma (ACG) precipitated by the use of an over-the-counter eye drop. ACG is often triggered by medications that cause pupillary dilation, such as alpha-adrenergic agonists. Alpha-adrenergic agonists cause the iris to bulge forward, obstructing the drainage angle and leading to a rapid increase in intraocular pressure. Beta blockers, mast cell stabilizers, and nonsteroidal anti-inflammatory drugs are not typically associated with ACG. Prostaglandin analogues are used to treat open-angle glaucoma, not ACG."
+}

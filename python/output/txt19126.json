@@ -1,0 +1,12 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 17-year-old boy is brought to the clinic due to poor vision at night. The patient developed mild difficulty seeing at night about 4 months ago, and it has slowly worsened. Visual field examination shows visual loss in the midperiphery. External eye examination reveals normal tear formation. Funduscopic examination shows bilateral optic disc pallor, attenuation of retinal vessels, and areas of dark discoloration in the retina. Which of the following is the most likely mechanism of this patient's visual impairment?",
+  "variants": [
+    "B. Genetic progressive retinal dystrophy",
+    "C. Increased intracranial pressure",
+    "D. Poor aqueous outflow due to narrow angle",
+    "E. Retinal artery occlusion"
+  ],
+  "answer": "B",
+  "explanation": "The patient's presentation of progressive night blindness, peripheral visual field loss, optic disc pallor, and retinal vessel attenuation is highly suggestive of retinitis pigmentosa, a genetic progressive retinal dystrophy.  The other options are less likely: Retinoblastoma typically presents earlier in life with leukocoria. Increased intracranial pressure usually presents with other neurological symptoms and papilledema. Angle-closure glaucoma typically presents with acute pain and a mid-dilated pupil. Central retinal artery occlusion presents with acute, painless vision loss and a cherry-red macula."
+}

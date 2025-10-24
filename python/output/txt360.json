@@ -1,0 +1,9 @@
+{
+  "error": "JSON parsing failed",
+  "raw_output_preview": "{\n  \"topic\": \"Ophthalmology\",\n  \"question\": \"A 64-year-old man comes to the emergency department due to painless loss of vision in the right eye. The patient's symptoms started suddenly several hours ago and have persisted. He has had no trauma or any similar episode in the past. He has a history of coronary artery disease, atrial fibrillation, and type 2 diabetes mellitus. Blood pressure is 144/86 mm Hg and pulse is 92/min. Cardiovascular examination reveals irregularly irregular rhythm with no murmurs, no peripheral edema, and slightly diminished pedal pulses in both feet symmetrically. Visual acuity in the right eye is hand motion only and normal in the left eye. Funduscopic examination of the right eye is shown in the image below.\",\n  \"variants\": [\n    \"A. Amaurosis fugax is a painless, transient, monocular vision loss caused by a small embolus to the ophthalmic artery. It usually does not last more than a few seconds.\",\n    \"B. Diabetic retinopathy manifests with blurry vision, bl",
+  "file": "/home/diktator4ik/python/txt/txt360.txt",
+  "question": "Missing question",
+  "variants": "Missing variants",
+  "answer": "Missing answer",
+  "explanation": "Missing explanation"
+}

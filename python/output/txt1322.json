@@ -1,0 +1,16 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 62-year-old woman is brought to the emergency department because of acute chest pain. She also complains of diaphoresis, nausea, and lightheadedness. Her blood pressure is 90/60 mm Hg and pulse is 42/min. An ECG reveals ST-segment elevation in the inferior leads. The appropriate therapy is initiated, including a medication to treat her bradycardia. After initial treatment, her blood pressure is 120/70 mm Hg and pulse is 76/min. However, she now complains of severe right-sided eye pain. Which of the following is the most likely cause for this patient's eye pain?",
+  "variants": [
+    "A. Iridocyclitis",
+    "B. Retinal artery thrombosis",
+    "C. Acute conjunctivitis",
+    "D. Glaucoma",
+    "E. Cataract",
+    "F. Retinal vein thrombosis",
+    "G. Retinal detachment",
+    "H. Vitreous hemorrhage"
+  ],
+  "answer": "D",
+  "explanation": "The patient's inferior ST-segment elevation on ECG suggests an inferior myocardial infarction (MI). Inferior MIs are often associated with bradycardia due to right coronary artery blockage, which supplies the SA and AV nodes. Atropine, used to treat bradycardia, can cause mydriasis, leading to angle-closure glaucoma in patients with shallow anterior chambers or higher intraocular pressures. This presents with severe eye pain. Iridocyclitis, retinal artery thrombosis, retinal vein thrombosis, retinal detachment, and vitreous hemorrhage are less likely to cause this specific presentation in the context of an inferior MI and atropine use."
+}

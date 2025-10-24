@@ -1,0 +1,14 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 58-year-old man comes to the emergency department due to vision disturbances . Over the past several weeks, the patient has had intermittent episodes in which he sees everything tinted with blue. His vision returned to normal within a few hours each time. When he woke up today, vision in the left eye was blurry. He has had no eye pain, conjunctiva! redness, or headache . The patient has tingling and numbness in the feet due to diabetic neuropathy , which is unchanged, and reports no other focal weakness or sensory loss. Medical history is notable for hypertension , type 2 diabetes mell itus, hyperlipidem ia, and erectile dysfunction. Vital signs are within normal limits. Physical examinati on shows an afferent pupillary defect, decreased visual acuity, and optic disc edema in the left eye. Discontinuing which of the following medications may improve this patient's vision?",
+  "variants": [
+    "A. Amitriptyline",
+    "B. Atorvastatin",
+    "C. Canagliflozin",
+    "D. Metformin",
+    "E. Ramipril",
+    "F. Sildenafil"
+  ],
+  "answer": "F",
+  "explanation": "The patient's symptoms (intermittent blue tint to vision, blurry vision, afferent pupillary defect, decreased visual acuity, and optic disc edema) are consistent with nonarteritic anterior ischemic optic neuropathy (NAION), a known ocular side effect of phosphodiesterase 5 (PDE5) inhibitors like sildenafil. Discontinuing sildenafil is the most likely intervention to improve vision.  Amitriptyline is associated with dry eye and angle-closure glaucoma, not blue discoloration of vision. Atorvastatin is associated with myopathy and hepatic toxicity. Canagliflozin is associated with renal excretion of glucose and water, not visual symptoms. Metformin is associated with gastrointestinal side effects and lactic acidosis, not visual symptoms. Ramipril is associated with renal function and blood pressure changes, not visual symptoms."
+}

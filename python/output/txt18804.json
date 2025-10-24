@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 45-year-old woman comes to the office due to progressive visual difficulty with night driving and reading road signs and fine print. The patient has systemic lupus erythematosus, which is treated with hydroxychloroquine and prednisone. She avoids sun exposure due to photosensitivity and has vitamin D deficiency for which she takes a vitamin D supplement. Examination shows opacities on the posterior side of the lenses in both eyes. Optic discs are normal. Ocular movements are full. The remainder of the examination shows no abnormalities. Which of the following is the most significant contributing factor for the eye findings in this patient?",
+  "variants": [
+    "A. Hydroxychloroquine",
+    "B. Lack of sun exposure",
+    "C. Prednisone",
+    "D. Systemic lupus erythematosus",
+    "E. Vitamin D deficiency"
+  ],
+  "answer": "C",
+  "explanation": "The patient's symptoms and examination findings are consistent with cataracts. While age-related cataracts are common, the patient's use of prednisone, a corticosteroid, is a significant contributing factor to premature cataract formation. Corticosteroids can alter lens homeostasis and increase susceptibility to oxidative injury. Hydroxychloroquine can cause retinopathy, vitamin D deficiency is not typically associated with cataracts, and systemic lupus erythematosus itself is not the primary cause of cataracts in this scenario."
+}

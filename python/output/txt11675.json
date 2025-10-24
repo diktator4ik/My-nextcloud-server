@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 62-year-old man with a history of poor medical follow-up comes to the office due to difficulty seeing. He has had blurry vision for the last 2 weeks. A day ago, he noticed a shadow develop suddenly across the visual field of his right eye. The patient has had no recent headaches , double vision, vertigo, light sensitivity, or nausea. On examination, pupils are equal and reactive to light. Visual field testing by confrontation reveals patchy loss of vision. A flame-shaped retinal hemorrhage in the right eye is noted on funduscopic examination, as shown in the image below. Which of the following is the most likely cause of his visual disturbance?",
+  "variants": [
+    "A. Central retinal artery occlusion",
+    "B. Ischemic optic neuropathy",
+    "C. Hypertensive retinal hemorrhage",
+    "D. Optic neuritis",
+    "E. Diabetic retinopathy"
+  ],
+  "answer": "C",
+  "explanation": "The patient presents with a sudden onset of visual field loss and a flame-shaped retinal hemorrhage, which is highly suggestive of hypertensive retinopathy. The history of poor medical follow-up and the presence of a retinal hemorrhage in the setting of visual field loss point towards hypertensive retinopathy as the most likely diagnosis. Central retinal artery occlusion typically presents with a cherry-red spot and diffuse retinal ischemia, not a flame-shaped hemorrhage. Ischemic optic neuropathy typically causes a more gradual vision loss and cupping of the optic disc. Optic neuritis is associated with pain with eye movement and inflammation. Diabetic retinopathy typically presents with microaneurysms and hard exudates."
+}

@@ -1,0 +1,9 @@
+{
+  "error": "JSON parsing failed",
+  "raw_output_preview": "{\n  \"topic\": \"Ophthalmology\",\n  \"question\": \"A 68-year-old woman comes to the emergency department due to sudden-onset double vision that started immediately after she woke up. The patient notices that her vision worsens when looking to the right. She has no headache, weakness, or numbness. The patient has a prolonged history of hypertension, hyperlipidemia, and type 2 diabetes mellitus. Blood pressure is 160/90 mm Hg and pulse is 86/min and regular. Neurologic examination, including visual acuity, is normal with the exception of the ocular findings shown in the image below. Rightward gaze Neutral Leftward gaze. What is the most likely diagnosis?\",\n  \"variants\": [\n    \"The abducens nerves innervate the lateral rectus muscles, which abduct the eyes. A lesion involving an abducens nerve would result in impaired abduction of the ipsilateral eye due to lateral rectus muscle palsy.\",\n    \"The lateral geniculate nucleus is located in the thalamus and relays visual information to the ipsilate",
+  "file": "/home/diktator4ik/python/txt/txt12083.txt",
+  "question": "Missing question",
+  "variants": "Missing variants",
+  "answer": "Missing answer",
+  "explanation": "Missing explanation"
+}

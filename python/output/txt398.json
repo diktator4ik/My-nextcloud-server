@@ -1,0 +1,14 @@
+{
+  "topic": "Ophthalmology",
+  "question": "Physical examination of a 23-year-old man diagnosed with chronic hepatitis shows corneal changes that are visible to the naked eye, as shown in the image below. This patient is most likely to have which of the following conditions?",
+  "variants": [
+    "A. Pulmonary emphysema",
+    "B. Diabetes mellitus",
+    "C. Wilson's disease",
+    "D. Renal cancer (clear cell carcinoma)",
+    "E. Hypertrophic cardiomyopathy",
+    "F. Congenital deafness"
+  ],
+  "answer": "C",
+  "explanation": "The image demonstrates a Kayser-Fleischer ring, an ophthalmologic finding most strongly associated with Wilson's disease. The Kayser-Fleischer ring is formed by copper deposition in Descemet's membrane in the cornea. The patient has chronic hepatitis, which can be associated with Wilson's disease. The other options are not typically associated with this finding."
+}

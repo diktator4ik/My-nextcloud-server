@@ -1,0 +1,14 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 52-year-old man comes to the office after his wife noted that his eyes appeared different. The patient reports no symptoms. Medical history is significant for hypertension and type 2 diabetes mellitus. He has smoked 1.5 packs of cigarettes daily for 25 years. Blood pressure is 140/86 mm Hg and pulse is 84/min. On physical examination, the right pupil is 3 mm and the left pupil is 5 mm. When the light in the examination room is dimmed, the anisocoria increases. Which of the following is the most likely location of the lesion?",
+  "variants": [
+    "A. Left oculomotor nerve",
+    "B. Left oculosympathetic pathway",
+    "C. Left optic nerve",
+    "D. Right oculomotor nerve",
+    "E. Right oculosympathet ic pathway",
+    "F. Right optic nerve"
+  ],
+  "answer": "E",
+  "explanation": "The patient presents with anisocoria (pupillary asymmetry) that increases in dim light. This indicates a loss of sympathetic innervation to the right pupil, as the smaller pupil (right) is unable to dilate in dim light.  The oculosympathetic pathway is responsible for pupillary dilation. Therefore, a lesion in the right oculosympathetic pathway is the most likely cause.  Oculomotor nerve lesions typically cause parasympathetic deficits, leading to constriction under bright light. Optic nerve lesions cause monocular vision loss and afferent pupillary defects, not anisocoria.  The left oculosympathetic pathway would cause a fixed constricted pupil in the left eye, not increased asymmetry in dim light. "
+}

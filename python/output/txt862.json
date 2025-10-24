@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 50-year-old woman who has had mild myopia for decades comes to the office for a routine physical examination. The patient has no chronic medical conditions and eats a healthy diet consisting of a variety of organically grown foods. She is excited because she rarely has to wear glasses or contacts anymore. Her visual acuity at 20 feet is 20/30 in both eyes without wearing her glasses. Which of the following conditions has the same etiology as the changes causing this patient's visual improvement?",
+  "variants": [
+    "A. Actinic keratosis (10%)",
+    "B. Angle-closure glaucoma (14%)",
+    "C. Coronary atherosclerosis (7%)",
+    "D. Femoral head osteonecrosis (1%)",
+    "E. Skin wrinkles (65%)"
+  ],
+  "answer": "E",
+  "explanation": "The patient's visual improvement is due to presbyopia, an age-related change where the lens loses elasticity. Skin wrinkles are also directly caused by chronological aging, with reduced collagen and elastin production.  Actinic keratosis, angle-closure glaucoma, and coronary atherosclerosis are not primarily age-related conditions."
+}

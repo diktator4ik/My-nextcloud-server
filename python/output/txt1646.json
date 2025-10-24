@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 43-year-old man with sexually acquired HIV infection (CD4 count 37 cells/mm3) presents with painless, progressive visual impairment. Funduscopy reveals yellow-white, fluffy retinal lesions near the retinal vessels with associated hemorrhage. Which of the following medications is the best initial therapy for this patient?",
+  "variants": [
+    "A. Acyclovir",
+    "B. Amphotericin B",
+    "C. Ganciclovir",
+    "D. Flucytosine",
+    "E. Penicillin G"
+  ],
+  "answer": "C",
+  "explanation": "Cytomegalovirus (CMV) retinitis is the most common cause of ocular disease in patients with untreated AIDS and CD4 counts <50/mm3. The diagnosis is typically made by funduscopy, which reveals yellow-white, fluffy retinal lesions near the retinal vessels with associated hemorrhage. Ganciclovir is the first-line therapy for CMV retinitis."
+}

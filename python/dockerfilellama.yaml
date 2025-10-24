@@ -1,0 +1,4 @@
+FROM ghcr.io/ggml-org/llama.cpp:server-cuda
+WORKDIR /workspace
+RUN mkdir -p /models
+CMD ["--help"]

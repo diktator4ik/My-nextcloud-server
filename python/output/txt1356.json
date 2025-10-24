@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 65-year-old man comes to the office due to bilateral visual difficulty that has progressed over the last year. Funduscopy is shown in the exhibit. Which of the following deficits is most likely to be seen on visual field examination?",
+  "variants": [
+    "A. Arcuate scotoma",
+    "B. Binasal hemianopia",
+    "C. Bitemporal hemianopia",
+    "D. Central scotoma",
+    "E. Homonymous hemianopia"
+  ],
+  "answer": "D",
+  "explanation": "The patient presents with age-related macular degeneration (AMD), indicated by yellow deposits (drusen) around the macula. AMD affects the macula, leading to a loss of central vision, which manifests as a central scotoma.  The other options are less likely given the clinical scenario. Arcuate scotomas are classically associated with glaucoma. Binasal and bitemporal hemianopias are associated with optic chiasm lesions. Homonymous hemianopia is associated with lesions posterior to the optic chiasm."
+}
