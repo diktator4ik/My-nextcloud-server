@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 68-year-old woman is evaluated for vision impairment. The patient has a decrease in both distant and near vision and has had occasional floaters. She has had no pain or redness in her eyes, headache, focal weakness, or sensory loss. Medical history is notable for type 2 diabetes mellitus, hypertension, and chronic kidney disease. Blood pressure is 138/84 mm Hg and pulse is 76/min. The pupils are equal and reactive to light bilaterally. Anterior chambers are clear, and there are no opacities of the cornea or lens. Funduscopic examination reveals scattered retinal microaneurysms, dot-and-blot hemorrhages, and cotton-wool spots, as well as new blood vessel formation. Which of the following contributed most to the pathogenesis of this patient's current ocular condition?",
+  "variants": [
+    "Age-related degeneration of retinal pigment epithelium",
+    "Chronic hyperglycemia-induced microvascular injury",
+    "Ganglion cell death due to high intraocular pressure",
+    "Retinal arterial occlusion from atherosclerotic disease",
+    "Vascular injury from increased intraluminal pressure"
+  ],
+  "answer": "B",
+  "explanation": "The patient's presentation with retinal microaneurysms, dot-and-blot hemorrhages, cotton-wool spots, and neovascularization is highly suggestive of diabetic retinopathy. These findings are consistent with chronic hyperglycemia-induced microvascular injury. The other options are less likely given the clinical picture. Age-related macular degeneration typically presents with central vision loss and drusen. Ganglion cell death due to high intraocular pressure is characteristic of glaucoma. Retinal arterial occlusion typically causes acute monocular vision loss with a cherry-red spot. Vascular injury from increased intraluminal pressure is less commonly associated with this constellation of findings."
+}

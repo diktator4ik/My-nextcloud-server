@@ -1,0 +1,12 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 57-year-old man is brought to the emergency department following a generalized tonic-clonic seizure. His wife reports that he has no history of seizures. However, she says that he has been complaining of intermittent headaches , memory loss, and vision disturbances for the past 2 weeks. Brain imaging shows a solitary mass within the right temporal lobe. Which of the following visual field defects (areas of vision loss in black) is most likely present in this patient?",
+  "variants": [
+    "A. Monocular vision loss results from a lesion anterior to the optic chiasm, including lesions to the optic nerve, retina, or globe.",
+    "B. In the optic chiasm, fibers from the nasal retina (which process the temporal visual field) cross so that the hemivisual fields from both eyes are processed in the same contralateral hemisphere. A lesion that affects these crossing fibers in the middle of the optic chiasm can produce bitemporal hemianopia.",
+    "C. Left homonymous hemianopia may occur with lesions to the right optic tract or the right occipital cortex. It may also occur with lesions to the optic radiations, but only if they affect both the superior and inferior optic radiations. This is less likely to occur with a mass lesion localized within the temporal lobe.",
+    "D. Superior optic radiations carry information from the superior retina/inferior visual field. They travel through the parietal lobe, so lesions in that area result in contralateral inferior quadrant visual field defects (ie, contralateral homonymous inferior quadrantanopia)."
+  ],
+  "answer": "A",
+  "explanation": "The patient has a temporal lobe mass. The inferior optic radiations travel through the temporal lobe. Therefore, a lesion in the right temporal lobe is likely to affect the inferior optic radiations, causing a left homonymous superior quadrantanopia. Option A describes monocular vision loss, which is caused by lesions anterior to the optic chiasm. This is incorrect. Option B describes bitemporal hemianopia, which is caused by lesions in the optic chiasm. This is incorrect. Option C describes left homonymous hemianopia, which is possible with lesions to the optic tract or occipital cortex, but less likely with a temporal lobe mass. This is incorrect. Option D describes the effect of lesions in the parietal lobe on the superior optic radiations, causing a contralateral inferior quadrant visual field defect. This is incorrect."
+}

@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 58-year-old airline captain comes to the office after he was found to have abnormal vision testing during a pilot medical certification examination. The patient feels well and has no ocular symptoms. Vision testing shows normal visual acuity but moderate loss of peripheral vision in both eyes. Results of the funduscopic examination are shown in the image below. What is the most likely diagnosis?",
+  "variants": [
+    "A. Diabetic retinopathy",
+    "B. Angle-closure glaucoma",
+    "C. Open-angle glaucoma",
+    "D. Macular degeneration",
+    "E. Central retinal artery occlusion"
+  ],
+  "answer": "C",
+  "explanation": "The patient presents with a gradual loss of peripheral vision, which is characteristic of open-angle glaucoma. The funduscopic exam would likely show cupping of the optic disc, although this is not explicitly stated in the text. The description of increased intraocular pressure due to decreased outflow of aqueous humor further supports this diagnosis. The other options are less likely given the patient's presentation. Diabetic retinopathy typically presents with changes in the retinal vasculature. Angle-closure glaucoma presents with acute symptoms like eye pain and halos around lights. Macular degeneration primarily affects central vision. Central retinal artery occlusion causes sudden, painless vision loss."
+}

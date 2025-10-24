@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 4-week-old boy is being evaluated in the neonatal intensive care unit. The patient was born at 29 weeks gestation. Immediately before delivery, the mother received a dose of terbutaline in an attempt to stop the contractions and a dose of antenatal corticosteroids to help improve fetal lung maturity. Shortly after birth, the patient developed severe respiratory distress, requiring surfactant administration and supplemental oxygen. He was weaned off oxygen therapy after a week. The patient also received routine prophylactic medications, including erythromycin ophthalmic ointment and intramuscular vitamin K, at birth. Ophthalm ic examination today shows abnormal retinal vascularization that extends into the vitreous. The retinal findings in this patient are most likely related to which of the following?",
+  "variants": [
+    "A. Maternal corticosteroid therapy",
+    "B. Maternal terbutaline treatment",
+    "C. Neonatal ophthalmic antibiotic treatment",
+    "D. Neonatal oxygen supplementation",
+    "E. Neonatal surfactant therapy"
+  ],
+  "answer": "D",
+  "explanation": "The patient presents with retinopathy of prematurity (ROP), a condition common in premature infants. The text explains that hyperoxia (elevated oxygen tension) after birth disrupts normal retinal angiogenesis, leading to aberrant vessel formation. The patient received supplemental oxygen for respiratory distress, which likely contributed to the development of ROP. Therefore, neonatal oxygen supplementation is the most likely cause."
+}

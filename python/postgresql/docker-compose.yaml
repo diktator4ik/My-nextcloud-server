@@ -1,0 +1,20 @@
+services:
+  usmle-db:
+    image: postgres:15
+    container_name: usmle-db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: usmle
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgresbackup:/postgresbackup
+    networks:
+      - usmle-network
+
+volumes:
+  postgres_data:
+
+networks:
+  usmle-network:

@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 28-year-old man comes to the emergency department after sustaining an accidental penetrating injury to the left eye. Examination shows left globe perforation with decreased visual acuity. The right eye is normal. The patient is otherwise healthy. Surgical treatment is performed with subsequent improvement in vision. Two months later, the patient experiences pain, photophobia, and diminished vision in the right eye. Evaluation shows leukocytes in the anterior chamber and vitreous humor and choroidal deposits consistent with granulomatous panuveitis. Disruption of which of the following immune processes is most likely responsible for this patient's current condition?",
+  "variants": [
+    "A. Complement regulation",
+    "B. Immune privilege",
+    "C. Immune surveillance",
+    "D. Immunoglobulin class switching",
+    "E. Positive selection"
+  ],
+  "answer": "B",
+  "explanation": "This patient with a traumatic ocular injury has developed granulomatous inflammation of the contralateral eye, a condition known as sympathetic ophthalmia. This occurs when there is a robust T-cell response to previously sequestered antigens in the eye, an area that displays immune privilege. Certain anatomic sites (eg, eyes, testes) have inherent immune privilege, in which inflammation is inhibited by multiple mechanisms (eg, physical barriers, lack of lymphatics, low expression of MHC class la); this helps limit potential organ damage that may result from a robust inflammatory response. Self-antigens located in immune-privileged sites can be recognized by T cells that escape negative selection in the thymus. Therefore, if these self-antigens are released into the lymphatic system as a result of trauma, T cells may recognize these self-antigens as foreign and mount a response in both the injured eye and the contralateral eye."
+}

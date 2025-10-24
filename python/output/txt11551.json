@@ -1,0 +1,15 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 22-year-old woman comes to the office for a routine prenatal visit. She is 16 weeks pregnant with her first child. Two months ago, she had a mononucleosis-like illness with fever, myalgia, and fatigue, and she was diagnosed with cytomegalovirus infection. The patient recovered with symptomatic treatment and is currently asymptomatic. Her other medical problems include episodic migraine headaches and benign choroidal nevus. She takes prenatal vitamins and does not use tobacco, alcohol, or illicit drugs. The patient has a family history of hypertension and glaucoma. Physical examination findings and prenatal ultrasound are unremarkable. This patient's unborn infant is at greatest risk for which of the following eye conditions?",
+  "variants": [
+    "A. Chorioretinitis",
+    "B. Choroidal nevus",
+    "C. Congenital cataract",
+    "D. Glaucoma",
+    "E. Inclusion conjunctivitis",
+    "F. Retinitis pigmentosa",
+    "G. Retinoblastoma"
+  ],
+  "answer": "A",
+  "explanation": "Up to 5% of women develop a primary cytomegalovirus (CMV) infection during pregnancy. Vertical transmission to the fetus occurs in approximately one-third of cases, with the highest risk of transmission occurring in the first trimester. CMV-related complications observed in infants exposed to the virus in utero include chorioretinitis (most common eye-related problem), sensorineural deafness, seizures, jaundice, hepatomegaly, splenomegaly, and microcephaly. Choroidal nevus is a nonhereditary, usually benign pigmented area underneath the retina and is not associated with in-utero CMV infection. Congenital cataract can be seen with in-utero rubella infection. Glaucoma can be present at birth and may be primary or secondary (eg, tumor), but it is not a known complication of CMV infection. Inclusion conjunctivitis is seen with Chlamydia trachomatis infection of the newborn. Retinitis pigmentosa is an inherited degenerative eye disease and is not a complication of in-utero CMV infection. Retinoblastoma is caused by a chromosomal mutation and is not associated with CMV infection."
+}

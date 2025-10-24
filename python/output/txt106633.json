@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 66-year-old hospitalized woman is evaluated due to progressive pain and decreased vision in her left eye. The patient was admitted 2 weeks ago due to acute diverticulitis with microperforation and localized abscess. CT­ guided abscess drainage was performed , and she has been receiving antibiotics and parenteral nutrition via a central venous catheter. The patient has no other medical conditions. Temperature is 38.3 C (100.91 F). Left eye examination shows chorioretinitis and vitreous abscess. Urgent partial vitrectomy is performed, and antimicrobial therapy is administered. Culture of the vitreous humor grows Candida a/bicans. Which of the following is the most likely route of pathogen invasion during the pathogenesis of this patient's ocular infection?",
+  "variants": [
+    "A. Direct extension from anterior chamber",
+    "B. Direct extension from paranasal sinuses",
+    "C. Hematogenous spread",
+    "D. Retrograde transfer in cranial nerve",
+    "E. Spread via lymphatic channels"
+  ],
+  "answer": "C",
+  "explanation": "Candida chorioretinitis & endophthalmitis typically occurs due to hematogenous dissemination to the choroid layer in the setting of fungemia. Most cases arise in hospitalized patients with indwelling central catheters. Patients usually have unilateral eye floaters and progressive vision loss."
+}

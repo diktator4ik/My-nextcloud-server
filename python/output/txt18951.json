@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 75-year-old man comes to the office due to a 2-year history of slowly worsening vision in both eyes. The symptoms are worse at night and the patient has stopped driving at night due to excessive glare from oncoming headlights. He has worked his entire life as a farmer and continues to drive tractors and other farm equipment during the day without difficulty. Medical history is unremarkable. Ocular examination shows loss of the red reflex and poor visualization of retinal detail. Acuity testing shows 20/100 vision in both eyes; visual field testing is normal. Which of the following is the most likely etiologic factor for this patient's eye condition?",
+  "variants": [
+    "Accumulation of sorbitol in the lens",
+    "Age-related oxidative injury",
+    "Decreased collagen fibril production",
+    "Ischemia and neovascularization",
+    "Loss of lens distensibility"
+  ],
+  "answer": "B",
+  "explanation": "The patient's symptoms (nighttime glare, loss of red reflex, decreased visual acuity) are classic signs of age-related cataracts. Age-related cataracts are primarily caused by age-related oxidative injury to the lens proteins, leading to lens opacification. While other options may contribute to some types of cataracts, age-related oxidative injury is the most common cause in this scenario. Accumulation of sorbitol is more common in diabetic cataracts, decreased collagen fibril production is associated with presbyopia, and ischemia/neovascularization is more common in diabetic retinopathy. Loss of lens distensibility is associated with presbyopia."
+}

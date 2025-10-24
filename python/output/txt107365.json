@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "An 85-year-old woman comes to the emergency department due to worsening eye pain. The patient noticed a rash around the left eye yesterday and, this morning, began experiencing left eye pain, redness, and decreased vision. Physical examination shows scattered vesicles on the left side of the forehead and nose and on the left upper and lower eyelids. Left eye examination shows conjunctival erythema, and fluorescein staining demonstrates linear, branching ulcerations on the cornea. Right eye examination and the remainder of the physical examination are normal. Which of the following pathogens is most likely responsible for this patient's current condition?",
+  "variants": [
+    "A. Adenovirus",
+    "B. Candida albicans",
+    "C. Herpes simplex virus",
+    "D. Pseudomonas aeruginosa",
+    "E. Varicella-zoster virus"
+  ],
+  "answer": "E",
+  "explanation": "The patient's presentation of a painful, dermatomal rash with corneal ulceration is highly suggestive of herpes zoster ophthalmicus, caused by reactivation of latent varicella-zoster virus (VZV) in the ophthalmic division of the trigeminal nerve. The presence of vesicles on the forehead, nose, and eyelids, along with corneal involvement (linear, branching ulcerations), supports this diagnosis.  Adenovirus typically causes conjunctivitis with skin vesicles, not dermatomal rashes. Candida albicans usually causes fungal endophthalmitis, which presents with floaters and decreased vision, not a vesicular rash. Herpes simplex virus can cause keratitis, but it doesn't typically cause a dermatomal rash. Pseudomonas aeruginosa is a common cause of bacterial keratitis, but it doesn't cause a vesicular rash."
+}

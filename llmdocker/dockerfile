@@ -1,0 +1,23 @@
+FROM nvidia/cuda:12.2.0-devel-ubuntu22.04
+
+# Встановлюємо залежності
+RUN apt update && apt install -y \
+    build-essential git cmake python3 python3-pip wget unzip && \
+    rm -rf /var/lib/apt/lists/*
+
+# Клонуємо llama.cpp
+RUN git clone https://github.com/ggerganov/llama.cpp /opt/llama.cpp
+WORKDIR /opt/llama.cpp
+
+# Компілюємо з CUDA підтримкою
+RUN make LLAMA_CUBLAS=1 -j$(nproc)
+
+# Встановлюємо PyMuPDF для парсингу PDF
+RUN pip install pymupdf
+
+# Додаємо тестовий скрипт для парсингу
+COPY ./pdf/* /opt/
+
+# Entry point
+ENTRYPOINT ["/opt/llama.cpp/llama-cli"]
+

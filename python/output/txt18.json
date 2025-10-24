@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 14-year-old boy is brought to the clinic by his mother due to changes in vision. For the last few weeks, the patient has been squinting when trying to read the interactive whiteboard in class and has had to sit closer to the front of the room. He has also developed headaches. The patient has no chronic medical conditions and takes no medications. Temperature is 37.2 C (99 F), blood pressure is 116/76 mm Hg, and pulse is 70/min. Examination of the eyes shows equal and reactive pupils. Extraocular muscles are intact, and visual field testing reveals no defects. Visual acuity shows 20/70 in both eyes. His ability to read close text is normal. Which of the following is the most likely cause of this patient's symptoms?",
+  "variants": [
+    "Chronically increased intraocular pressure",
+    "Disturbance in development of the visual cortex",
+    "Increased anterior-posterior diameter of the eyes",
+    "Loss of accommodating power of the lens",
+    "Refracted image focused posterior to the retina"
+  ],
+  "answer": "C",
+  "explanation": "The patient's symptoms (squinting, sitting closer to the screen, headaches, decreased visual acuity) are consistent with myopia (nearsightedness). Myopia is caused by an increased anterior-posterior diameter of the eye, which shifts the focal point of a refracted image anterior to the retina. This results in blurred vision of distant objects and decreased visual acuity. The fact that near vision is unaffected is also characteristic of myopia. The other options are less likely: glaucoma typically presents with optic neuropathy, a disturbance in the visual cortex would likely cause more significant visual field defects, loss of accommodating power is more common in older individuals (presbyopia), and a refracted image focused posterior to the retina is the definition of myopia."
+}

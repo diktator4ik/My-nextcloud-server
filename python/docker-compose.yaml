@@ -1,0 +1,14 @@
+services:
+  llama.cpp:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    restart: always
+    volumes:
+      - /home/diktator4ik/python:/home/$USER
+      - /home/diktator4ik/lamacpp/llama.cpp/build/huggingmodels:/models
+    command: >
+      -m /models/gemma
+      -ngl 35
+      --port 8080
+      --threads 8
+    ports:
+      - "8080:8080"

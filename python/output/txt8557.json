@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 34-year-old woman comes to the office due to double vision. The patient first experienced difficulty focusing her eyes while at work yesterday. On awakening this morning, her symptoms had progressed to frank diplopia. Medical history is insignificant. A complete physical examination is performed, including a full neurologic assessment. Shining light into the patient's right eye causes constriction of her right pupil, but not the left pupil. Shining light into her left eye causes constriction of only her right pupil. Which of the following additional physical examination findings is likely to be found in this patient?",
+  "variants": [
+    "Absence of the left corneal reflex",
+    "Drooping of the left eyelid",
+    "Inability to close the left eye",
+    "Inward deviation of the left eye",
+    "Visual loss in the left eye"
+  ],
+  "answer": "B",
+  "explanation": "The patient presents with diplopia and a left efferent pupillary defect (absent left pupillary response when light enters either eye). This is highly suggestive of a left oculomotor nerve (CN III) palsy. CN III innervates several extraocular muscles, including the medial rectus (responsible for adduction). A left CN III palsy will cause the eye to deviate downward and laterally (a 'down and out' gaze).  The parasympathetic fibers of CN III innervate the iris sphincter muscle, causing miosis (constriction) of the pupil.  The absence of pupillary constriction in the left eye when light is shone into either eye indicates a dysfunction of the left CN III.  Furthermore, CN III also innervates the levator palpebrae superioris, which elevates the upper eyelid.  Therefore, a drooping of the left eyelid (ptosis) is a likely finding.  The other options are less likely: Absence of the corneal reflex is associated with lesions involving CN V1 or CN VII. Inability to close the left eye would suggest a lesion involving the orbicularis oculi muscle, which is innervated by CN VII. Inward deviation of the left eye would suggest a lesion of the lateral rectus, innervated by CN VI. Visual loss in the left eye would suggest a lesion of the optic nerve (CN II)."
+}

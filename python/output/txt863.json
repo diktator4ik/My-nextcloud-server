@@ -1,0 +1,13 @@
+{
+  "topic": "Ophthalmology",
+  "question": "A 3-month-old boy is brought to the office by his mother for a routine checkup. He is found to have a right-sided white pupillary reflex. His father was diagnosed with a retinal neoplasm during childhood and had his left eye enucleated. This child is at the greatest risk of developing which of the following neoplasms?",
+  "variants": [
+    "A. Acute lymphoblastic leukemia",
+    "B. Neuroblastoma",
+    "C. Ewing sarcoma",
+    "D. Osteosarcoma",
+    "E. Medulloblastoma"
+  ],
+  "answer": "D",
+  "explanation": "The question describes a child with a white pupillary reflex (leukocoria) and a family history of retinoblastoma in the father. Retinoblastoma is associated with mutations in the Rb gene. Familial retinoblastoma requires two mutations (the 'two-hit hypothesis'). Children with familial retinoblastoma are at increased risk for secondary tumors, particularly osteosarcoma. Therefore, the correct answer is Osteosarcoma."
+}
