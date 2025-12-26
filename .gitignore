@@ -11,6 +11,18 @@ Thumbs.db
 ehthumbs.db
 Icon?
 
+# Ignore all Terraform variable files (the gold standard)
+*.tfvars
+*.tfvars.json
+
+# Ignore local terraform state and binary files
+.terraform/
+terraform.tfstate*
+.terraform.lock.hcl
+
+# Ignore sensitive crash logs
+crash.log
+
 # === IDEs ===
 .vscode/
 .idea/

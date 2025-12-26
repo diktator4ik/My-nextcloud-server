@@ -1,0 +1,74 @@
+# PostgreSQL Configuration (Using the Bitnami chart structure usually bundled)
+postgresql:
+  enabled: true
+  auth:
+    username: "nextcloud"
+    password: "${db_password}"
+    database: "nextcloud"
+  primary:
+    persistence:
+      enabled: false
+      size: 10Gi
+      existingClaim: ""
+      storageClass: ""
+      accessMode: ReadWriteOnce
+
+mariadb:
+  enabled: false
+
+# Nextcloud core settings
+nextcloud:
+  host: "${nextcloud_host}"
+  username: "admin"
+  password: "${admin_password}" 
+  configs:
+    proxy.config.php: |-
+      <?php
+      $CONFIG = array (
+        'trusted_proxies' => array('10.0.0.0/8'),
+        'overwriteprotocol' => 'http',
+        'forwarded_for_headers' => array('HTTP_X_FORWARDED_FOR'),
+      );
+
+externalDatabase:
+  enabled: true
+  type: postgresql
+  host: "nextcloud-postgresql"
+  database: "nextcloud"
+  user: "nextcloud"
+  password: "${db_password}"
+
+redis:
+  enabled: true
+  architecture: standalone
+  auth:
+    enabled: false  
+
+persistence:
+  enabled: true
+  size: 50Gi
+
+ingress:
+  enabled: true
+  className: "traefik"
+  annotations:
+    traefik.ingress.kubernetes.io/router.priority: "10"
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+  hosts:
+    - host: "${nextcloud_host}"
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: nextcloud
+              port:
+                number: 8080
+
+resources:
+  requests:
+    memory: "512Mi"
+    cpu: "200m"
+  limits:
+    memory: "1Gi"
+    cpu: "1000m"
