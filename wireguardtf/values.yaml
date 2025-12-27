@@ -1,0 +1,351 @@
+# -- Run as a DaemonSet instead of Deployment
+daemonSet: false
+image:
+  repository: ghcr.io/bryopsida/wireguard
+  tag: main
+  pullPolicy: Always
+
+initContainer:
+  image:
+    repository: busybox
+    tag: latest
+  resources:
+    requests:
+      memory: 64Mi
+      cpu: "100m"
+      ephemeral-storage: 8Mi
+    limits:
+      memory: 64Mi
+      cpu: "100m"
+      ephemeral-storage: 64Mi
+keygenJob:
+  # -- when enabled, uses a image with go bindings for k8s and wg to create the secret if it does not exist, on re-runs it leaves the existing secret in place and exits succesfully
+  useWireguardManager: true
+  # -- When useWireguardManager is enabled this image is used instead of the kubectl image
+  wireguardMgrImage:
+    repository: ghcr.io/bryopsida/k8s-wireguard-mgr
+    tag: main
+    pullPolicy: Always
+  image:
+    repository: ghcr.io/curium-rocks/wg-kubectl
+    tag: latest
+    pullPolicy: Always
+  podAnnotations: {}
+  podSecurityContext:
+    seccompProfile:
+      type: RuntimeDefault
+    fsGroup: 1000
+    fsGroupChangePolicy: Always
+  containerSecurityContext:
+    runAsUser: 1000
+    runAsGroup: 1000
+    runAsNonRoot: true
+    privileged: false
+    allowPrivilegeEscalation: false
+    readOnlyRootFilesystem: true
+  resources:
+    requests:
+      memory: 256Mi
+      cpu: "100m"
+      ephemeral-storage: 8Mi
+    limits:
+      memory: 256Mi
+      cpu: "100m"
+      ephemeral-storage: 128Mi
+  # -- Specify the script to run to generate the private key
+  command: ["/job/entry-point.sh"]
+  # -- Inject additional scripts into the key generation job
+  extraScripts: {}
+  # -- Add additional environment variables to the key generation job, supports helm templating
+  extraEnv: {}
+podAnnotations: {}
+labels: {}
+# -- Run pod on host network
+runPodOnHostNetwork: false
+# -- Expose VPN service on hostPort
+useHostPort: false
+# -- Host port to expose the VPN service on
+hostPort: 30010
+wireguard:
+  # -- Address of the VPN server
+  serverAddress: 10.34.0.1/24
+  # -- Subnet for your VPN, take care not to clash with cluster POD cidr
+  serverCidr: 10.34.0.0/24
+  # -- Add the serverCidr to the nat source net option
+  natAddSourceNet: true
+  # -- A collection of extraopts for wireguard interface
+  interfaceOpts: {}
+  # -- A collection of clients that will be added to wg0.conf, accepts objects with keys PublicKey and AllowedIPs (mandatory) and optional FriendlyName or FriendlyJson (https://github.com/MindFlavor/prometheus_wireguard_exporter#friendly-tags) and PersistentKeepalive (https://www.wireguard.com/quickstart/#nat-and-firewall-traversal-persistence), stored in secret
+  clients: []
+    # - FriendlyName: username1
+    #   ## FriendlyJson will override FriendlyName
+    #   # FriendlyJson:
+    #   #   username: "username1"
+    #   AllowedIPs: 10.34.0.101/32
+    #   PublicKey: QTxoajwVHWZ7qqVwY2F9T1L04M0j5GSNC15++LZw1iA=
+    #   # Normally PersistentKeepalive is not required
+    #   #PersistentKeepalive: 25
+  # -- If true, calls sysctl -w net.ipv6.conf.all.forwarding=1
+  forwardIPv6: false
+securityContext:
+  runAsNonRoot: true
+  runAsUser: 1000
+  readOnlyRootFilesystem: true
+  allowPrivilegeEscalation: true
+  privileged: false
+service:
+  # -- Whether the service will be created or not
+  enabled: true
+  # -- Service type, to keep internal to cluster use ClusterIP or NodePort
+  type: NodePort
+  # -- Service port, default is 51820 UDP
+  port: 30010
+  # -- Node port, only valid with service type: NodePort
+  nodePort: 30010
+  # -- External Traffic Policy for the service
+  externalTrafficPolicy: ""
+  # -- IP to assign to the LoadBalancer service
+  loadBalancerIP: ""
+  # -- Annotations
+  annotations: {}
+  # -- Extra ports that can be attached to the service object, these are passed directly to the port array on the service and must be well formed to the specification
+  extraPorts: []
+  # -- loadBalancerClass for Service Controllers that support it
+  loadBalancerClass: ""
+  # -- ipFamilyPolicy enables single or dual stack services
+  ipFamilyPolicy: "SingleStack"
+# -- Name of a secret with a wireguard private key on key privatekey, if not provided on first install a hook generates one.
+secretName: ~
+replicaCount: 3
+resources:
+  requests:
+    memory: 256Mi
+    cpu: "100m"
+    ephemeral-storage: 8Mi
+  limits:
+    memory: 256Mi
+    cpu: "100m"
+    ephemeral-storage: 128Mi
+# -- Override the default runtime class of the container, if not provided `runc` will most likely be used
+runtimeClassName: ~
+deploymentStrategy:
+  type: "RollingUpdate"
+  rollingUpdate:
+    maxUnavailable: 0
+    maxSurge: 1
+disruptionBudget:
+  enabled: true
+  minAvailable: 2
+autoscaling:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 75
+# -- Provide additional environment variables to the wireguard container
+extraEnv: {}
+#  TEST_ENV_VAR: test-value
+# -- Provide additional sidecars to the wireguard pod, these are directly attached to the pod and must be well formed ContainerSpec
+extraSideCars: []
+# -- Create storage claims that can be used by side cars
+extraStorage: []
+# - name: conf
+#   storageClassName: default
+#   storage: 8Gi
+#   accessModes:
+#     - ReadWriteMany
+#   volumeMode: Filesystem
+# -- Create additional configmaps that may be used in sidecars
+extraConfigMaps: []
+# - name: some-config
+#    data:
+#      key1: |
+#        some config file data
+# -- If provided, this secret will be used instead of the config created from the helm value scope
+configSecretName: ~
+# -- The property/key on the secret holding the wireguard configuration file
+configSecretProperty: wg0.conf
+# -- Disable creation and any mounting of a private key, this assumes another mechanism is provided/used at the container level to fetch the private key
+disablePrivateKeyManagement: false
+# -- Disable creation and any mount of the wireguard confifugration file, this assumes another mechanism is provided/used to manage a configuration file
+disableConfigManagement: false
+# -- Passthrough pod volumes
+volumes: {}
+# -- Passthrough pod volume mounts
+volumeMounts: {}
+# -- Set pod affinity or antiAffinity
+affinity:
+  # nodeAffinity:
+  #   requiredDuringSchedulingIgnoredDuringExecution:
+  #     nodeSelectorTerms:
+  #     - matchExpressions:
+  #       - key: "example.com/vpn"
+  #         operator: Exists
+  podAntiAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      - labelSelector:
+          matchLabels:
+            app: "{{ .Release.Name }}-wireguard"
+            role: vpn
+        topologyKey: kubernetes.io/hostname
+# -- Set pod nodeSelector, a simplified version of affinity
+nodeSelector: {}
+  # example.com/vpn: ""
+# -- Set pod tolerations
+tolerations: []
+  # - effect: NoSchedule
+  #   operator: Exists
+
+## Metrics configuration
+metrics:
+  # -- Enable exposing Wireguard metrics
+  enabled: false
+  # -- Wireguard Exporter image
+  image:
+    repository: docker.io/mindflavor/prometheus-wireguard-exporter
+    tag: 3.6.6
+    pullPolicy: IfNotPresent
+  resources:
+    requests:
+      memory: 256Mi
+      cpu: "100m"
+      ephemeral-storage: 8Mi
+    limits:
+      memory: 256Mi
+      cpu: "100m"
+      ephemeral-storage: 128Mi
+  # @params -- Wireguard Exporter environment variables. See https://mindflavor.github.io/prometheus_wireguard_exporter
+  extraEnv:
+    # -- Enable verbose mode
+    PROMETHEUS_WIREGUARD_EXPORTER_VERBOSE_ENABLED: "false"
+    # -- Prepends sudo to wg commands
+    PROMETHEUS_WIREGUARD_EXPORTER_PREPEND_SUDO_ENABLED: "false"
+    # -- Specify the service address. This is the address your Prometheus instance should point to
+    PROMETHEUS_WIREGUARD_EXPORTER_ADDRESS: "0.0.0.0"
+    # -- This flag adds the friendly_name attribute or the friendly_json attributes to the exported entries. See [Friendly tags](https://mindflavor.github.io/prometheus_wireguard_exporter/#friendly-tags) for more details. Multiple files are allowed (they will be merged as a single file in memory so avoid duplicates)
+    PROMETHEUS_WIREGUARD_EXPORTER_CONFIG_FILE_NAMES: "/etc/wireguard/{{ .Values.configSecretProperty }}"
+    # -- Enable the allowed ip + subnet split mode for the labels
+    PROMETHEUS_WIREGUARD_EXPORTER_SEPARATE_ALLOWED_IPS_ENABLED: "true"
+    # -- Exports peer’s remote ip and port as labels (if available)
+    PROMETHEUS_WIREGUARD_EXPORTER_EXPORT_REMOTE_IP_AND_PORT_ENABLED: "true"
+    # -- Specifies the interface(s) passed to the wg show <interface> dump parameter. Multiple parameters are allowed
+    PROMETHEUS_WIREGUARD_EXPORTER_INTERFACES: "all"
+    # -- Adds the wireguard_latest_handshake_delay_seconds metric that automatically calculates the seconds passed since the last handshake
+    EXPORT_LATEST_HANDSHAKE_DELAY: "true"
+  ## Wireguard metrics service parameters
+  service:
+    # -- Metrics service HTTP port
+    port: 9586
+    # -- Additional service labels
+    labels: {}
+    # -- Annotations for enabling prometheus to access the metrics endpoints
+    annotations: {}
+  ## Prometheus Operator ServiceMonitor configuration
+  serviceMonitor:
+    # -- Create ServiceMonitor Resource for scraping metrics using PrometheusOperator
+    enabled: true
+    # -- Metrics service HTTP port
+    port: exporter
+    # -- The endpoint configuration of the ServiceMonitor. Path is mandatory. Interval, timeout and relabelings can be overwritten.
+    path: "/metrics"
+    # -- Namespace of the ServiceMonitor. If empty, current namespace is used
+    namespace: ""
+    # -- Interval at which metrics should be scraped
+    interval: 30s
+    # -- Specify the timeout after which the scrape is ended
+    # e.g:
+    #   scrapeTimeout: 30s
+    scrapeTimeout: ""
+    # -- Additional labels that can be used so ServiceMonitor will be discovered by Prometheus
+    labels: {}
+    # -- Annotations
+    annotations: {}
+    # -- Prometheus instance selector labels
+    # ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+    selector: {}
+    # -- RelabelConfigs to apply to samples before scraping
+    relabelings: []
+    # -- MetricRelabelConfigs to apply to samples before ingestion
+    metricRelabelings: []
+    # -- honorLabels chooses the metric's labels on collisions with target labels
+    honorLabels: false
+    # -- The name of the label on the target service to use as the job name in prometheus.
+    jobLabel: ""
+  ## Prometheus Operator alert rules configuration
+  prometheusRule:
+    # -- Create PrometheusRule Resource for scraping metrics using PrometheusOperator
+    enabled: false
+    # -- Namespace of the ServiceMonitor. If empty, current namespace is used
+    namespace: ""
+    # -- Additional labels that can be used so PrometheusRule will be discovered by Prometheus
+    labels: {}
+    # -- Annotations
+    annotations: {}
+    # -- Groups, containing the alert rules.
+    # Example:
+    #   groups:
+    #     - name: Wireguard
+    #       rules:
+    #         - alert: WireguardInstanceNotAvailable
+    #           annotations:
+    #             message: "Wireguard instance in namespace {{ `{{` }} $labels.namespace {{ `}}` }} has not been available for the last 5 minutes."
+    #           expr: |
+    #             absent(kube_pod_status_ready{namespace="{{ include "common.names.namespace" . }}", condition="true"} * on (pod) kube_pod_labels{pod=~"{{ include "common.names.fullname" . }}-\\d+", namespace="{{ include "common.names.namespace" . }}"}) != 0
+    #           for: 5m
+    #           labels:
+    #             severity: critical
+    groups: []
+  dashboard:
+    # -- Create a ConfigMap with a Grafana dashboard
+    enabled: true
+    # -- Grafana dashboard labels
+    labels:
+      grafana_dashboard: "1"
+    # -- Grafana dashboard annotations
+    annotations: {}
+      # k8s-sidecar-target-directory: /tmp/dashboards/Other
+## Health sidecar configuration
+healthSideCar:
+  # -- Opt in side car to expose a http health end point for external load balancers that are not kubernetes aware, in most cases this is not needed
+  enabled: false
+  # -- Secure settings by default, can be overriden to reduce security posture if needed
+  securityContext:
+    capabilities:
+      drop:
+        - ALL
+    runAsGroup: 10001
+    runAsUser: 10001
+    seccompProfile:
+      type: RuntimeDefault
+    runAsNonRoot: true
+    readOnlyRootFilesystem: true
+    allowPrivilegeEscalation: false
+  # -- set resource constraints, set to nil to remove
+  resources:
+    requests:
+      memory: 256Mi
+      cpu: "100m"
+      ephemeral-storage: 8Mi
+    limits:
+      memory: 256Mi
+      cpu: "100m"
+      ephemeral-storage: 256Mi
+  image:
+    # -- Override repo if you prefer to use your own image
+    repository: ghcr.io/bryopsida/http-healthcheck-sidecar
+    # -- Rolling tag used by default to take patches automatically
+    tag: main
+    # -- Pull Policy always to avoid cached rolling tags, if you change this you should use a non rolling tag
+    pullPolicy: Always
+  service:
+    # -- Override service port if needed
+    port: 3000
+    # -- Toggle to enable the service, if the pod is a daemonset healthSideCar.useHostPort can be used instead
+    enabled: true
+    # -- Service type, given the use case, in most cases this should be NodePort
+    type: NodePort
+    # -- The port for the service exposed on each node
+    nodePort: 31313
+  # -- When enabled the container will define a host port, in most cases this should only be used when deploying with daemonSet: true
+  useHostPort: false
+  # -- When useHostPort is true this is the host port defined
+  hostPort: 13000
