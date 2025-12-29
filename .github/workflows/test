@@ -1,0 +1,13 @@
+name: Test ARC Runner
+on:
+  workflow_dispatch: 
+
+jobs:
+  test-job:
+    runs-on: arc-runner-set 
+    steps:
+      - name: Hello from my own K8s cluster
+        run: |
+          echo "I am running on my own hardware!"
+          cat /etc/os-release
+          docker ps 
