@@ -10,6 +10,7 @@
 Thumbs.db
 ehthumbs.db
 Icon?
+*.sha256
 
 # Ignore all Terraform variable files (the gold standard)
 *.tfvars
