@@ -1,12 +1,21 @@
-name: Test ARC Runner
+name: ARC runner smoke test
+
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
-  test-job:
-    runs-on: arc-runner-set 
+  test:
+    runs-on: self-hosted
     steps:
-      - name: Hello from my own K8s cluster
+      - name: Show runner info
         run: |
-          echo "I am running on my own hardware!"
-          cat /etc/os-release
+          echo "Runner name: $RUNNER_NAME"
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner arch: $RUNNER_ARCH"
+          hostname
+          uname -a
+
+      - name: Keep runner alive for debugging
+        run: |
+          echo "Sleeping for 60 seconds..."
+          sleep 60
