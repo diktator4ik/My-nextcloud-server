@@ -10,4 +10,3 @@ jobs:
         run: |
           echo "I am running on my own hardware!"
           cat /etc/os-release
-          docker ps 
