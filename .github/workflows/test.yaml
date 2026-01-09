@@ -1,21 +1,10 @@
-name: ARC runner smoke test
+name: ARC Test
 
 on:
   workflow_dispatch:
 
 jobs:
   test:
-    runs-on: arc-runner-set
+    runs-on: [self-hosted, linux, k3s]
     steps:
-      - name: Show runner info
-        run: |
-          echo "Runner name: $RUNNER_NAME"
-          echo "Runner OS: $RUNNER_OS"
-          echo "Runner arch: $RUNNER_ARCH"
-          hostname
-          uname -a
-
-      - name: Keep runner alive for debugging
-        run: |
-          echo "Sleeping for 60 seconds..."
-          sleep 60
+      - run: echo "Hello from ARC runner"
