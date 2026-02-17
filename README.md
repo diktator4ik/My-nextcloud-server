@@ -1,5 +1,5 @@
 
-# My IT Journey Roadmap 🚀
+# My Roadmap 🚀
 
 Hey there!   
 This is my personal roadmap where I track my progress learning system administration and building my home lab.
@@ -41,8 +41,8 @@ This repo is my digital playground for storing notes, configs, ideas, and steps 
 - [x] Implement monitoring with Prometheus & Grafana  
 - [ ] Configure backups to secure my data  
 - [ ] Build and run my own DNS server  
-- [ ] Set up a VPN for secure remote connections  
-- [ ] Sync Nextcloud data with my mobile devices  
+- [x] Set up a VPN for secure remote connections  
+- [x] Sync Nextcloud data with my mobile devices  
 - [ ] Create a Telegram bot for server notifications and commands  
 
 
